@@ -14,7 +14,7 @@ import (
 type TUI struct {
 	L *zap.Logger
 	logC chan string
-	connLogC chan string
+	ConnLogC chan string
 	app *tview.Application
 	serverMode bool
 }
@@ -29,7 +29,7 @@ func Start(serverMode bool) *TUI {
 	// Setup connection log channel
 	cch := make(chan string, 20);
 
-	return &TUI{L: nil, app: app, logC: ch, connLogC: cch, serverMode: serverMode}
+	return &TUI{L: nil, app: app, logC: ch, ConnLogC: cch, serverMode: serverMode}
 }
 
 func (t *TUI) Stage() {
@@ -127,7 +127,7 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 		AddItem("Lori", "[blue]10.0.0.2", '4', func() {
 			t.L.Info("Lori Clicked")
 		}).
-		AddItem("Quit", "Press to exit", 'q', func() {
+		AddItem("Quit", "Press q to exit", 'q', func() {
 			t.app.Stop()
 		})
 	clientList.SetBorder(true).SetTitle(" Clients Online ")
@@ -181,7 +181,7 @@ func (t *TUI) setupServerUI(flex *tview.Flex) {
 		AddItem("Jesus", "Idle", '1', nil).
 		AddItem("Luigi", "[blue]Waiting for Celine", '2', nil).
 		AddItem("Lori", "Idle", '3', func(){
-			t.connLogC <- "[gray]06:19:58[-] Lori [blue]->[-] Luigi\n"
+			t.ConnLogC <- "[gray]06:19:58[-] Lori [blue]->[-] Luigi\n"
 		})
 	clientList.SetBorder(true).SetTitle(" Clients Queue ")
 	clientList.SetBackgroundColor(0)
@@ -210,7 +210,7 @@ func (t *TUI) setupServerUI(flex *tview.Flex) {
 	go func() {
 		w := tview.ANSIWriter(connlogs)
 		for {
-			for str := range t.connLogC {
+			for str := range t.ConnLogC {
 				if _, err := io.WriteString(w, str); err != nil {
 					panic(err)
 				}

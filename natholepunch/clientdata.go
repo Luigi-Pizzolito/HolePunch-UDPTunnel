@@ -4,6 +4,7 @@ package natholepunch
 type ConnectRequest struct {
 	LocalID  string `json:"local_id"`
 	RemoteID string `json:"remote_id"`
+	Punch	 bool	`json:"punch`		// flag to whether client is idle and wants online client listing from server
 }
 
 // ConnectResponse decribes message from server to client, contents requested client address

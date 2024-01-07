@@ -13,8 +13,9 @@ var (
 	// Server mode switch
 	infoExchangeServer bool
 	// Server mode variables
-	serverAddr string
 	serverPort string
+	// CLient mode variables
+	infoAddr string
 )
 
 func init() {
@@ -22,7 +23,8 @@ func init() {
 	flag.BoolVar(&infoExchangeServer, "server", false, "Run in info exchange server mode (run this on a publicly accesible IP)")
 	flag.StringVar(&serverPort, "server-port", "10001", "Info exchange server port to listen on.")
 
-	flag.StringVar(&serverAddr, "info-server", "127.0.0.1", "Info exchange server IP address to bind to.")
+	flag.StringVar(&infoAddr, "info-server", "127.0.0.1", "Info exchange server IP address to bind to.")
+	
 	flag.Parse()
 }
 
@@ -37,8 +39,12 @@ func main() {
 	if infoExchangeServer {
 		// Info Exchange Server mode
 		// Start server
-		s := punch.NewHPServer(l)
-		go s.Serve(serverAddr,  serverPort)
+		s := punch.NewHPServer(l, t)
+		go func(){
+			if err := s.Serve(serverPort); err != nil {
+				l.Fatal(err.Error())
+			}
+		}()
 	} else {
 		// Holepunch + UDP Tunnel client mode
 	}

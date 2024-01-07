@@ -463,3 +463,277 @@
 2024-01-08T06:54:11.315+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:35	Hole Punch UDP Tunnel V1.0
 2024-01-08T06:54:36.752+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:35	Hole Punch UDP Tunnel V1.0
 2024-01-08T06:54:52.777+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:35	Hole Punch UDP Tunnel V1.0
+2024-01-08T06:55:58.370+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:35	Hole Punch UDP Tunnel V1.0
+2024-01-08T06:56:01.103+0800	[34mINFO[0m	tui/ui.go:128	Lori Clicked
+2024-01-08T06:56:01.675+0800	[34mINFO[0m	tui/ui.go:128	Lori Clicked
+2024-01-08T06:56:02.371+0800	[34mINFO[0m	tui/ui.go:128	Lori Clicked
+2024-01-08T06:56:06.025+0800	[34mINFO[0m	tui/ui.go:128	Lori Clicked
+2024-01-08T07:02:55.799+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:02:55.799+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:02:55.799+0800	[34mINFO[0m	natholepunch/server.go:35	Running server at :10001:10001
+2024-01-08T07:03:31.157+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:03:31.157+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:03:31.157+0800	[34mINFO[0m	natholepunch/server.go:35	Running server at <nil>:10001
+2024-01-08T07:04:33.392+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:04:33.392+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:04:33.393+0800	[34mINFO[0m	natholepunch/server.go:35	Running server at <nil>:10001
+2024-01-08T07:04:33.393+0800	[34mINFO[0m	natholepunch/server.go:36	Running server at 127.0.0.1:10001
+2024-01-08T07:06:00.537+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:06:00.538+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:06:00.538+0800	[34mINFO[0m	natholepunch/server.go:36	Running server at 0.0.0.0:10001
+2024-01-08T07:08:00.922+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:08:00.923+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:08:00.923+0800	[34mINFO[0m	natholepunch/server.go:45	Running server at 0.0.0.0:10001
+2024-01-08T07:08:11.662+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:08:11.662+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:08:11.662+0800	[34mINFO[0m	natholepunch/server.go:45	Running server at udp://0.0.0.0:10001
+2024-01-08T07:09:37.238+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:09:37.238+0800	[34mINFO[0m	natholepunch/server.go:27	Info Exchange Server mode
+2024-01-08T07:09:37.239+0800	[34mINFO[0m	natholepunch/server.go:45	Running server at udp://0.0.0.0:10001
+2024-01-08T07:25:44.374+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:25:44.374+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:25:44.375+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at udp://0.0.0.0:10001
+2024-01-08T07:27:08.215+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:08.215+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:11.218+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:11.218+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:14.218+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:14.218+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:17.219+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:17.219+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:20.219+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:20.219+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:23.221+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:23.221+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:26.223+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:26.224+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:29.225+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:29.225+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:32.228+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:32.228+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:35.230+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:35.230+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:38.231+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:38.232+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:41.234+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:41.234+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:44.236+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:44.236+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:47.237+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:47.237+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:50.237+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:50.238+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:53.240+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:53.240+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:56.242+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:56.242+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:27:59.244+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:27:59.244+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:28:02.244+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:28:02.245+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:28:05.247+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:28:05.247+0800	[34mINFO[0m	natholepunch/server.go:76	NewClientAddr: 127.0.0.1:42130
+2024-01-08T07:30:28.225+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:30:28.225+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:30:28.225+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at udp://0.0.0.0:10001
+2024-01-08T07:30:29.900+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:30:29.900+0800	[34mINFO[0m	natholepunch/server.go:72	
+2024-01-08T07:30:29.900+0800	[34mINFO[0m	natholepunch/server.go:77	NewClientAddr: 127.0.0.1:35734
+2024-01-08T07:30:32.902+0800	[34mINFO[0m	natholepunch/server.go:68	client	{"from": "Alice", "to": "Bob"}
+2024-01-08T07:30:32.902+0800	[34mINFO[0m	natholepunch/server.go:72	
+2024-01-08T07:30:32.902+0800	[34mINFO[0m	natholepunch/server.go:77	NewClientAddr: 127.0.0.1:35734
+2024-01-08T07:32:41.219+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:32:41.219+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:32:41.220+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at udp://0.0.0.0:10001
+2024-01-08T07:33:17.564+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:33:17.564+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:33:17.565+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at [blue]udp://0.0.0.0:10001[-]
+2024-01-08T07:40:51.550+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:40:51.551+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:40:51.551+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at udp://0.0.0.0:10001
+2024-01-08T07:40:54.138+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:40:54.138+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:40:57.140+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:40:57.140+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:00.141+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:00.141+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:03.141+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:03.141+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:06.141+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:06.141+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:09.144+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:09.144+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:12.146+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:12.146+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:15.148+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:15.148+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:18.148+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:18.148+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:21.148+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:21.149+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:24.151+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:24.151+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:27.151+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:27.152+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:30.152+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:30.152+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:33.154+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:33.154+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:36.154+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:36.154+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:39.155+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:39.155+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:41:42.157+0800	[34mINFO[0m	natholepunch/server.go:69	New client: @127.0.0.1:47956
+2024-01-08T07:41:42.157+0800	[34mINFO[0m	natholepunch/server.go:79	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:11.668+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:42:11.668+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:42:11.669+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at udp://0.0.0.0:10001
+2024-01-08T07:42:13.978+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:13.978+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:16.981+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:16.981+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:19.981+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:19.981+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:22.983+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:22.983+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:25.985+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:25.985+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:28.988+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:28.988+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:42:31.990+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:57481
+2024-01-08T07:42:31.990+0800	[34mINFO[0m	natholepunch/server.go:80	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:43:34.995+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:43:34.995+0800	[34mINFO[0m	natholepunch/server.go:30	Info Exchange Server mode
+2024-01-08T07:43:34.996+0800	[34mINFO[0m	natholepunch/server.go:48	Running server at udp://0.0.0.0:10001
+2024-01-08T07:43:36.711+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:48118
+2024-01-08T07:43:36.711+0800	[34mINFO[0m	natholepunch/server.go:82	New client is Idle: returning list of online clients.
+2024-01-08T07:43:39.713+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:48118
+2024-01-08T07:43:39.713+0800	[34mINFO[0m	natholepunch/server.go:82	New client is Idle: returning list of online clients.
+2024-01-08T07:43:42.716+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:48118
+2024-01-08T07:43:42.716+0800	[34mINFO[0m	natholepunch/server.go:82	New client is Idle: returning list of online clients.
+2024-01-08T07:45:07.298+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:07.298+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:10.300+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:10.300+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:13.302+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:13.302+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:16.304+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:16.304+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:19.305+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:19.305+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:22.307+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:22.307+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:25.308+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:25.308+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:28.310+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:28.310+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:31.312+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:31.312+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:34.314+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:34.314+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:37.315+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:37.315+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:40.317+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:40.318+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:43.319+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:43.319+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:46.321+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:46.321+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:49.323+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:49.323+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:52.326+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:52.326+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:55.328+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:55.328+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:45:58.330+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:45:58.330+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:46:01.331+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:46:01.331+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:46:04.333+0800	[34mINFO[0m	natholepunch/server.go:72	New client: Alice@127.0.0.1:40740
+2024-01-08T07:46:04.333+0800	[34mINFO[0m	natholepunch/server.go:77	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:53:46.687+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:53:46.688+0800	[34mINFO[0m	natholepunch/server.go:31	Info Exchange Server mode
+2024-01-08T07:53:46.688+0800	[34mINFO[0m	natholepunch/server.go:49	Running server at udp://0.0.0.0:10001
+2024-01-08T07:53:49.665+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:53:49.665+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:53:52.667+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:53:52.667+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:53:55.668+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:53:55.668+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:53:58.669+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:53:58.669+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:01.671+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:01.672+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:04.674+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:04.674+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:07.676+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:07.676+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:10.677+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:10.677+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:13.679+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:13.680+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:16.681+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:16.681+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:19.683+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:19.683+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:22.684+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:22.684+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:25.686+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:25.686+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:28.688+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:28.688+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:31.688+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:31.688+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:34.691+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:34.691+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:37.691+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:37.691+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:40.692+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:40.692+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:43.692+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:43.692+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:54:46.694+0800	[34mINFO[0m	natholepunch/server.go:73	New client: Alice@127.0.0.1:54355
+2024-01-08T07:54:46.695+0800	[34mINFO[0m	natholepunch/server.go:84	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:31.326+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:37	Hole Punch UDP Tunnel V1.0
+2024-01-08T07:56:31.327+0800	[34mINFO[0m	natholepunch/server.go:31	Info Exchange Server mode
+2024-01-08T07:56:31.327+0800	[34mINFO[0m	natholepunch/server.go:49	Running server at udp://0.0.0.0:10001
+2024-01-08T07:56:36.813+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:36.814+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:39.815+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:39.815+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:42.817+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:42.818+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:45.820+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:45.820+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:48.822+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:48.822+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:51.824+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:51.824+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:54.827+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:54.827+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:56:57.828+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:56:57.828+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:00.830+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:00.830+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:03.832+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:03.832+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:06.833+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:06.833+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:09.835+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:09.835+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:12.837+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:12.837+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:15.840+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:15.840+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:18.842+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:18.842+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:21.844+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:21.844+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:24.846+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:24.846+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:27.849+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:27.849+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:30.851+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:30.851+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
+2024-01-08T07:57:33.853+0800	[34mINFO[0m	natholepunch/server.go:71	New client: Alice@127.0.0.1:47728
+2024-01-08T07:57:33.853+0800	[34mINFO[0m	natholepunch/server.go:82	New client requests hole-punch: Alice -> Bob
