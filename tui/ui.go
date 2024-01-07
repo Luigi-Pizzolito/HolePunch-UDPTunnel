@@ -6,8 +6,6 @@ import (
 	"os"
 	// "time"
 
-	"https://github.com/fsnotify/fsnotify"
-
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 	"go.uber.org/zap"
@@ -15,22 +13,17 @@ import (
 
 type TUI struct {
 	L *zap.Logger
-	// l *chan string
-	Logstream *TBuffer
+
 	app *tview.Application
 }
 
 func Start() *TUI {
-	// Start logger
-	logstream := &TBuffer{}
 	
 	// Setup TUI
 	app := tview.NewApplication().EnableMouse(true)
 
-	
-	memfile := NewMemFile([]byte("log"))
 
-	return &TUI{L: nil, Logstream: logstream, memfile: memfile, app: app}
+	return &TUI{L: nil, app: app}
 }
 
 func (t *TUI) Stage() {
@@ -123,20 +116,6 @@ func (t *TUI) Stage() {
 		fmt.Printf("ANSI Writer exited.\n")
 	}()
 	fmt.Fprintf(logs, "logs here\nand here\nand here too\nand here as well\n")
-	go func(){
-	// 	w := logs.BatchWriter()
-	// 	defer w.Close()
-	// 	// w.Clear()
-	// 	for {
-	// // 		fmt.Fprintln(w, "To sit in solemn silence")
-	// // 	// for {
-	// // 	// 	// msg := <-logChn
-    // // 	// 	fmt.Println(t.Logstream.String())
-	// // 	// 	// fmt.Fprintf(t.Logstream, "%s", msg)
-	// // 	// 	// t.Logstream.WriteString("asdf");
-	// 		time.Sleep(1*time.Second)
-	// 	}
-	}()
 
 
 	flex := tview.NewFlex().

@@ -2,9 +2,9 @@ package natholepunch
 
 import (
 	"sync"
-	"strconv"
+	// "strconv"
 
-	"time"
+	// "time"
 
 	"go.uber.org/zap"
 )
@@ -29,10 +29,10 @@ func (s *HPServer) init() {
 //-------- Server Functions --------
 func (s *HPServer) Hello() {
 	s.l.Info("Hello from HPServer!")
-	for i := 0; i < 5000000; i++ {
-        // Display integer.
-        s.l.Info(strconv.Itoa(i))
-		time.Sleep(1 * time.Second)
-    }
+	// for i := 0; i < 5000000; i++ {
+    //     // Display integer.
+    //     s.l.Info(strconv.Itoa(i))
+	// 	time.Sleep(1 * time.Second)
+    // }
 }
 
