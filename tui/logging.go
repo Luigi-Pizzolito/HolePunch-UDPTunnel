@@ -32,7 +32,7 @@ type StringWriter struct {
 
 func (sw StringWriter) Write(p []byte) (n int, err error) {
 	str := string(p)
-   str, _ = simplifyLogFormat(str) // simplify log string for UI output
+   	str, _ = simplifyLogFormat(str) // simplify log string for UI output
 	sw.ch <- str // Write the string to the channel
 	return len(p), nil
 }
@@ -58,7 +58,7 @@ func simplifyLogFormat(input string) (string, error) {
 	timeFormatted := timeObj.Format("15:04:05")
 
 	// Construct the output string in the desired format
-	output := fmt.Sprintf("%s %s\t%s", timeFormatted, parts[1], parts[3])
+	output := fmt.Sprintf(" [gray]%s[-] %s\t%s", timeFormatted, parts[1], parts[3])
 
 	return output, nil
 }

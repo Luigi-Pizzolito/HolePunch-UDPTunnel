@@ -21,5 +21,4 @@
 go.work
 
 # Log files
-log/*
 log/log.log
