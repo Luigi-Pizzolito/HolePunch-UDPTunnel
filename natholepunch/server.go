@@ -21,14 +21,9 @@ func NewHPServer(l *zap.Logger) *HPServer {
 	return &HPServer{m: make(map[string]ClientData), l: l}
 }
 
-// Initialiser
-func (s *HPServer) init() {
-	s.l.Info("nat server started!")
-}
-
 //-------- Server Functions --------
-func (s *HPServer) Hello() {
-	s.l.Info("Hello from HPServer!")
-
+func (s *HPServer) Serve(serverAddr string, serverPort string) {
+	s.l.Info("Info Exchange Server mode")
+	s.l.Info("Running server at "+serverAddr+":"+serverPort)
 }
 

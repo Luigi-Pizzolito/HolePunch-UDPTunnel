@@ -67,13 +67,13 @@ func (t *TUI) setupSharedUI(flex *tview.Flex) {
 	clientInfo.SetBorder(true).SetTitle(" Client Info ")
 	clientInfo.SetBackgroundColor(0)
 
-	fmt.Fprintf(clientInfo, " [\"name\"]Name: Jesus[\"\"]\n")
-	fmt.Fprintf(clientInfo, " [\"rAdr\"]Remote Address: udp://32.13.43.23:3213[\"\"]\n")
+	fmt.Fprintf(clientInfo, " [\"name\"]Name: [green]Jesus[-][\"\"]\n")
+	fmt.Fprintf(clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://32.13.43.23:3213[-][\"\"]\n")
 	if !t.serverMode {
-		fmt.Fprintf(clientInfo, " [\"stat\"]Status: [green]Tunnel Active[-][\"\"]\n")
-		fmt.Fprintf(clientInfo, " [\"lAdr\"]Local Address: 10.0.0.1[\"\"]\n")
-		fmt.Fprintf(clientInfo, " [\"rPrt\"]Alowed Ports: 22, 80, 443[\"\"]\n")
-		fmt.Fprintf(clientInfo, " [\"rPng\"]Ping: [green]32.4ms[-][\"\"]\n")
+		fmt.Fprintf(clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
+		fmt.Fprintf(clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
+		fmt.Fprintf(clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
+		fmt.Fprintf(clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
 	}
 	
 	// add to subflex
@@ -122,9 +122,9 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 	clientList := tview.NewList().
 		// ShowSecondaryText(false).
 		AddItem("Jesus", "Tunnel Inactive", '1', nil).
-		AddItem("Luigi", "[green]10.0.0.3", '2', nil).
+		AddItem("Luigi", "[blue]10.0.0.3", '2', nil).
 		AddItem("Celine", "Tunnel Inactive", '3', nil).
-		AddItem("Lori", "[red]10.0.0.2", '4', func() {
+		AddItem("Lori", "[blue]10.0.0.2", '4', func() {
 			t.L.Info("Lori Clicked")
 		}).
 		AddItem("Quit", "Press to exit", 'q', func() {
@@ -140,7 +140,6 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 
 	// -- Network Interfaces
 	root := tview.NewTreeNode("Network Interfaces").
-					SetColor(tcell.ColorRed).
 					SetSelectable(false)
 	activeTunnels := tview.NewTreeView().
 							SetRoot(root).
@@ -150,18 +149,20 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 	//----
 	node := tview.NewTreeNode("tun0").
 				// SetReference(filepath.Join(path, file.Name())).
+				SetColor(tcell.ColorPurple).
 				SetSelectable(false)
 	root.AddChild(node)
-	nnode := tview.NewTreeNode("10.0.0.1 ([blue]Jesus[-])").
+	nnode := tview.NewTreeNode("[blue]10.0.0.1[-] (Jesus)").
 				// SetReference(filepath.Join(path, file.Name())).
 				SetSelectable(false)
 	node.AddChild(nnode)
 	//----
 	node2 := tview.NewTreeNode("tun1").
 				// SetReference(filepath.Join(path, file.Name())).
+				SetColor(tcell.ColorPurple).
 				SetSelectable(false)
 	root.AddChild(node2)
-	nnode2 := tview.NewTreeNode("10.0.0.2 ([blue]Lori[-])").
+	nnode2 := tview.NewTreeNode("[blue]10.0.0.2[-] (Lori)").
 				// SetReference(filepath.Join(path, file.Name())).
 				SetSelectable(false)
 	node2.AddChild(nnode2)
@@ -182,7 +183,7 @@ func (t *TUI) setupServerUI(flex *tview.Flex) {
 		AddItem("Lori", "Idle", '3', func(){
 			t.connLogC <- "[gray]06:19:58[-] Lori [blue]->[-] Luigi\n"
 		})
-	clientList.SetBorder(true).SetTitle(" Clients Online ")
+	clientList.SetBorder(true).SetTitle(" Clients Queue ")
 	clientList.SetBackgroundColor(0)
 	// add to flex
 	flex.AddItem(clientList, 0, 2, true)
