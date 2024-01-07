@@ -2,11 +2,12 @@ package main
 
 import (
 	"flag"
-	"fmt"
 
 	// punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
 	tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
 )
+
+const version = "1.0"
 
 var (
 	infoExchangeServer bool
@@ -19,26 +20,19 @@ func init() {
 }
 
 func main() {
-	fmt.Println("Hello world!")
-
-	
-
+	// Setup TUI
 	t := tui.Start()
 	t.Stage()
-
-
+	// Setup logger.
 	l := t.L
-	l.Info("Still working?")
+	l.Info("Hole Punch UDP Tunnel V"+version);
 	
 
 	// s := punch.NewHPServer(l)
 	// go s.Hello()
 
-
+	// Run TUI (blocking)
 	t.RunApp()
-
-	fmt.Println("hi")
-
 
 	
 }

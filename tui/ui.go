@@ -3,8 +3,8 @@ package tui
 import (
 	"fmt"
 	"io"
-	"os"
-	// "time"
+	// "os"
+	"time"
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
@@ -13,27 +13,26 @@ import (
 
 type TUI struct {
 	L *zap.Logger
-
+	logC chan string
 	app *tview.Application
 }
 
 func Start() *TUI {
 	
 	// Setup TUI
-	app := tview.NewApplication().EnableMouse(true)
+	app := tview.NewApplication().EnableMouse(true);
 
+	// Setup log channel
+	ch := make(chan string, 100);
 
-	return &TUI{L: nil, app: app}
+	return &TUI{L: nil, app: app, logC: ch}
 }
 
 func (t *TUI) Stage() {
+	// Setup logger
 	t.L = t.setupLogger();
 
-	
-	
-	t.L.Info("Hellow");
-
-	
+	// Setup UI elements
 	clientList := tview.NewList().
 		// ShowSecondaryText(false).
 		AddItem("Jesus", "Tunnel Inactive", '1', nil).
@@ -41,16 +40,12 @@ func (t *TUI) Stage() {
 		AddItem("Celine", "Tunnel Inactive", '3', nil).
 		AddItem("Lori", "[red]10.0.0.2", '4', func() {
 			t.L.Info("Lori Clicked")
-			// t.Logstream.WriteString("test4\n")
-			// t.app.Draw()
-			// t.Logs.SetText("aaa")
-			// t.Logstream.WriteString("asdf");
-			// go t.memfile.Write([]byte("asdfff\n"));
 		}).
 		AddItem("Quit", "Press to exit", 'q', func() {
 			t.app.Stop()
 		})
 	clientList.SetBorder(true).SetTitle(" Clients Online ")
+	clientList.SetBackgroundColor(0)
 
 	clientInfo := tview.NewTextView().
 						SetDynamicColors(true).
@@ -59,6 +54,7 @@ func (t *TUI) Stage() {
 							t.app.Draw()
 						})
 	clientInfo.SetBorder(true).SetTitle(" Client Info ")
+	clientInfo.SetBackgroundColor(0)
 	fmt.Fprintf(clientInfo, "[\"name\"]Name: Jesus[\"\"]\n")
 	fmt.Fprintf(clientInfo, "[\"rAdr\"]Remote Address: udp://32.13.43.23:3213[\"\"]\n")
 	fmt.Fprintf(clientInfo, "[\"stat\"]Status: [green]Tunnel Active[-][\"\"]\n")
@@ -73,6 +69,7 @@ func (t *TUI) Stage() {
 							SetRoot(root).
 							SetCurrentNode(root)
 	activeTunnels.SetBorder(true).SetTitle(" Active Tunnels ")
+	activeTunnels.SetBackgroundColor(0)
 	//----
 	node := tview.NewTreeNode("tun0")//.
 				// SetReference(filepath.Join(path, file.Name())).
@@ -99,30 +96,32 @@ func (t *TUI) Stage() {
 						t.app.Draw()
 					})
 	logs.SetFocusFunc(func() {
-		fmt.Println("test3")
 		logs.ScrollToEnd()
 	})
 	logs.SetScrollable(false)
 	logs.SetBorder(true).SetTitle(" Logs ")
-
-
+	logs.SetBackgroundColor(0)
 	
-
+	// Go function to copy logs recieved in log channel to UI text box
 	go func() {
 		w := tview.ANSIWriter(logs)
-		if _, err := io.Copy(w, os.Stdin); err != nil {
-			panic(err)
+		for {
+			for str := range t.logC {
+				if _, err := io.WriteString(w, str); err != nil {
+					panic(err)
+				}
+			}
+			
+			time.Sleep(100 * time.Millisecond);
 		}
-		fmt.Printf("ANSI Writer exited.\n")
 	}()
-	fmt.Fprintf(logs, "logs here\nand here\nand here too\nand here as well\n")
 
-
+	// Populate UI elements in Flex
 	flex := tview.NewFlex().
 		AddItem(clientList, 0, 2, true).
 		AddItem(tview.NewFlex().SetDirection(tview.FlexRow).
-			AddItem(clientInfo, 0, 6, false).
-			AddItem(logs, 0, 4, false), 
+			AddItem(clientInfo, 0, 4, false).
+			AddItem(logs, 0, 6, false), 
 			0, 4, false).
 		AddItem(activeTunnels, 0, 2, false)
 	t.app.SetRoot(flex, true).SetFocus(flex)

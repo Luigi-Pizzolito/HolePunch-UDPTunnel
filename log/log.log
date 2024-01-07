@@ -154,3 +154,89 @@
 2024-01-06T01:10:12.433+0800	[33mWARN[0m	tui/logging.go:20	cc
 2024-01-06T01:10:12.433+0800	[34mINFO[0m	tui/ui.go:34	Hellow
 2024-01-06T01:10:12.433+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:31	Still working?
+2024-01-08T04:24:11.379+0800	[33mWARN[0m	tui/logging.go:20	cc
+2024-01-08T04:24:11.379+0800	[34mINFO[0m	tui/ui.go:36	Hellow
+2024-01-08T04:24:11.379+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:31	Still working?
+2024-01-08T04:24:35.874+0800	[33mWARN[0m	tui/logging.go:20	cc
+2024-01-08T04:24:35.874+0800	[34mINFO[0m	tui/ui.go:36	Hellow
+2024-01-08T04:24:35.874+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:31	Still working?
+2024-01-08T04:27:02.379+0800	[33mWARN[0m	tui/logging.go:20	cc
+2024-01-08T04:27:02.379+0800	[34mINFO[0m	tui/ui.go:36	Hellow
+2024-01-08T04:27:02.379+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:31	Still working?
+2024-01-08T04:31:37.463+0800	[33mWARN[0m	tui/logging.go:21	cc
+2024-01-08T04:31:37.463+0800	[34mINFO[0m	tui/ui.go:36	Hellow
+2024-01-08T04:31:37.463+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:31	Still working?
+2024-01-08T04:31:43.191+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:43.671+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:44.047+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:44.523+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:45.943+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:51.460+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:51.864+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:52.179+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:52.439+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:52.691+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:53.171+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:53.884+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:54.316+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:54.580+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:54.812+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:55.376+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:55.711+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:55.996+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:56.212+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:56.380+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:56.899+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:57.399+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:57.827+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:58.048+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:58.304+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:58.912+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:59.248+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:31:59.527+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:00.016+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:00.240+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:02.299+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:03.268+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:03.735+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:04.019+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:04.283+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:04.560+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:04.855+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:05.136+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:32:05.372+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:44.814+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:46.246+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:46.617+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:46.793+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:46.966+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:48.622+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:48.798+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:48.983+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:49.342+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:49.530+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:49.698+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:50.082+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:50.274+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:39:50.494+0800	[34mINFO[0m	tui/ui.go:45	Lori Clicked
+2024-01-08T04:41:55.707+0800	[33mWARN[0m	tui/logging.go:21	cc
+2024-01-08T04:41:55.707+0800	[34mINFO[0m	tui/ui.go:36	Hellow
+2024-01-08T04:41:55.707+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:26	Setup complete, initialising TUI.
+2024-01-08T04:43:11.355+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:26	Setup complete, initialising TUI.
+2024-01-08T04:44:24.840+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:26	Setup complete, initialising TUI.
+2024-01-08T04:46:27.816+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T04:54:39.361+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T04:55:19.115+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T04:55:37.017+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T04:59:18.677+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T04:59:42.126+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T04:59:51.351+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T05:00:00.157+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T05:01:04.598+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T05:02:42.627+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T05:03:16.350+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:28	Hole Punch UDP Tunnel V1.0
+2024-01-08T05:04:41.406+0800	[34mINFO[0m	tui/ui.go:42	Lori Clicked
+2024-01-08T05:04:41.846+0800	[34mINFO[0m	tui/ui.go:42	Lori Clicked
+2024-01-08T05:04:42.022+0800	[34mINFO[0m	tui/ui.go:42	Lori Clicked
+2024-01-08T05:04:46.578+0800	[34mINFO[0m	tui/ui.go:42	Lori Clicked
+2024-01-08T05:04:46.762+0800	[34mINFO[0m	tui/ui.go:42	Lori Clicked
