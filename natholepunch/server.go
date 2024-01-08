@@ -35,6 +35,12 @@ func (s *HPServer) addClient(c ClientData) {
 	defer s.Unlock()
 	s.ClientList[c.LocalID] = c
 }
+// delete client from clients queue map
+func (s *HPServer) deleteClient(ID string) {
+	s.RLock()
+	defer s.RUnlock()
+	delete(s.ClientList, ID)
+}
 
 // start serving and reply to client requests
 func (s *HPServer) Serve(serverPort string) error {
@@ -55,7 +61,6 @@ func (s *HPServer) Serve(serverPort string) error {
 	}
 	defer serverConn.Close()
 
-	// s.l.Info("Running server at "+serverAddr.IP.String()+":"+serverPort)
 	s.l.Info("Running server at udp://0.0.0.0:"+serverPort)
 
 	// Attend to client connections
@@ -78,38 +83,51 @@ func (s *HPServer) Serve(serverPort string) error {
 			// parse JSON request from client
 			json.Unmarshal(buf[:n], &incomingRequest)
 
-			// Add client to clients queue
-			s.l.Info("New client: "+incomingRequest.LocalID+"@"+newClientIP+":"+newClientPort)
-			s.addClient(ClientData{
-				RemoteID:  incomingRequest.RemoteID,
-				LocalID:   incomingRequest.LocalID,
-				LocalIP:   newClientIP,
-				LocalPort: newClientPort,
-			})
+			// Client disconnect request
+			if incomingRequest.RemoteID == "\x00" {
+				// Client was idle and is now closing the program
+				// Remove client from list of available online clients
+				s.deleteClient(incomingRequest.LocalID)
+				s.l.Info(incomingRequest.LocalID+" disconnected.")
 
-
-			// Check if client wants server client list or requests a hole-punch
-			if incomingRequest.RemoteID != "" {
-				// Client is requesting hole-punch addr of other client
-
-				// Check if other client is online
-
-
-
-				s.printPunch(incomingRequest.LocalID,incomingRequest.RemoteID)
-				s.l.Info("New client requests hole-punch: "+incomingRequest.LocalID+" -> "+incomingRequest.RemoteID)
-
-
+				return
 			} else {
-				// Client is idle and wants list of online clients from server
+				// Other kind of request: Idle listing or Hole-Punch request
 
-				// Return list of available online clients
+				// Add client to clients queue
+				// check if client is not already in queue first
+				if _, ok := s.ClientList[incomingRequest.LocalID]; !ok {
+					s.l.Info("New client: "+incomingRequest.LocalID+"@"+newClientIP+":"+newClientPort)
+				}
+				s.addClient(ClientData{
+					RemoteID:  incomingRequest.RemoteID,
+					LocalID:   incomingRequest.LocalID,
+					LocalIP:   newClientIP,
+					LocalPort: newClientPort,
+				})
 
-				s.l.Info(incomingRequest.LocalID+" fetched list of clients.")
+				// Check if client wants server client list or requests a hole-punch
+				if incomingRequest.RemoteID == "" {
+					// Client is idle and wants list of online clients from server
 
+					// Return list of available online clients
+
+					s.l.Info(incomingRequest.LocalID+" fetched list of clients.")
+
+					return
+				} else {
+					// Client is requesting hole-punch addr of other client
+
+					// Check if other client is online
+
+
+					// Print punch request to logs
+					s.printPunch(incomingRequest.LocalID,incomingRequest.RemoteID)
+					s.l.Info("New client requests hole-punch: "+incomingRequest.LocalID+" -> "+incomingRequest.RemoteID)
+					
+					return
+				}
 			}
-	
-			
 		}()
 	}
 

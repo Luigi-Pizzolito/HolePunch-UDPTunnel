@@ -18,6 +18,7 @@ import (
 type TUI struct {
 	// logging
 	L *zap.Logger			// handle for main app logger
+	Logfile string			// log file path
 	logC chan string		// channel for redirecting main app log
 	ConnLogC chan string	// channel for redirecting connection history log
 
@@ -36,8 +37,6 @@ type TUI struct {
 	// -- server only
 	ConnLogs *tview.TextView
 
-
-
 	serverMode bool			// server mode UI select
 }
 
@@ -45,15 +44,17 @@ func Start(serverMode bool) *TUI {
 	// Setup TUI
 	app := tview.NewApplication().EnableMouse(true);
 
+	// Setup log file
+	log := "./log/log.log"
 	// Setup log channel
 	ch := make(chan string, 100);
 	// Setup connection log channel
 	cch := make(chan string, 20);
 
-	return &TUI{L: nil, app: app, logC: ch, ConnLogC: cch, serverMode: serverMode}
+	return &TUI{L: nil, app: app, logC: ch, ConnLogC: cch, Logfile: log, serverMode: serverMode}
 }
 
-func (t *TUI) Stage() {
+func (t *TUI) Build() {
 	// Setup logger
 	t.L = t.setupLogger();
 
@@ -220,6 +221,18 @@ func (t *TUI) ConnectClientList(m map[string]punch.ClientData) {
 }
 
 func (t *TUI) refreshUIData() {
+	// -- Logs
+	// copy t.logs recieved in log channel to UI text box
+	// requires separate goroutine to not block
+	go func(){
+		w := tview.ANSIWriter(t.logs)
+		for str := range t.logC {
+			if _, err := io.WriteString(w, str); err != nil {
+				panic(err)
+			}
+		}
+	}()
+
 	// loop to always refresh data
 	for {
 		// Refresh data in UI elements for server & client UI specifically
@@ -258,17 +271,6 @@ func (t *TUI) refreshUIData() {
 			// show that no clients are selected if there are no clients
 			t.clientInfo.SetText("No clients selected.")
 		}
-		// -- Logs
-		// copy t.logs recieved in log channel to UI text box
-		// requires separate goroutine to not block
-		go func(){
-			w := tview.ANSIWriter(t.logs)
-			for str := range t.logC {
-				if _, err := io.WriteString(w, str); err != nil {
-					panic(err)
-				}
-			}
-		}()
 
 		// sleep to refresh at 10Hz
 		time.Sleep(100 * time.Millisecond)

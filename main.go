@@ -2,6 +2,10 @@ package main
 
 import (
 	"flag"
+	"go.uber.org/zap"
+	"fmt"
+	"time"
+	"os/user"
 
 	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
 	tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
@@ -11,32 +15,64 @@ const version = "1.0"
 
 var (
 	// Server mode switch
-	infoExchangeServer bool
+	infoExchangeServer 	bool
 	// Server mode variables
-	serverPort string
+	serverPort 			string
 	// CLient mode variables
-	infoAddr string
+	infoAddr 			string
+	localID 			string
+	remoteID			string
+	timeout				time.Duration
 )
 
+// function to initialise before main
 func init() {
 	// Parse command-line arguments
+	// -- Server Mode flags
 	flag.BoolVar(&infoExchangeServer, "server", false, "Run in info exchange server mode (run this on a publicly accesible IP)")
-	flag.StringVar(&serverPort, "server-port", "10001", "Info exchange server port to listen on.")
-
-	flag.StringVar(&infoAddr, "info-server", "127.0.0.1", "Info exchange server IP address to bind to.")
-	
+	flag.StringVar(&serverPort, "p", "10001", "Info exchange server port to listen on or connect to")
+	// -- Client Mode flags
+	flag.StringVar(&infoAddr, "a", "127.0.0.1", "Info exchange server IP address to connect to")
+	// Get current OS username as default Local side ID
+	currentUser, err := user.Current()
+	if err != nil {
+		panic(err)
+	}
+	flag.StringVar(&localID, "l", currentUser.Username, "Specify Local side ID")
+	flag.StringVar(&remoteID, "r", "", "(optional) Specify remote side ID to tunnel to")
+	flag.DurationVar(&timeout, "t", time.Second*2, "Specify reconnection timeout")
 	flag.Parse()
+}
+
+// function to cleanup after main
+func teardown(l *zap.Logger, serverMode bool) {
+	l.Warn("Tearing down application!")
+	fmt.Println("Tearing down application!")
+
+	if !serverMode {
+		// Client mode termination
+		//todo: Send a request to server to inform client going offline
+
+	}
 }
 
 func main() {
 	// Setup TUI
 	t := tui.Start(infoExchangeServer)
-	t.Stage()
+	t.Build()
+
 	// Setup logger.
 	l := t.L
+	fmt.Println("Hole Punch UDP Tunnel V"+version);
 	l.Info("Hole Punch UDP Tunnel V"+version);
+	fmt.Println("Log file at "+t.Logfile)
+
+	// Setup app teardown
+	defer teardown(l, infoExchangeServer)
 	
+	// Start main logic
 	if infoExchangeServer {
+
 		// Info Exchange Server mode
 		// Start server
 		s := punch.NewHPServer(l, t.ConnLogC)
@@ -47,7 +83,10 @@ func main() {
 			}
 		}()
 	} else {
+
 		// Holepunch + UDP Tunnel client mode
+
+
 	}
 
 	// Run TUI (blocking)
