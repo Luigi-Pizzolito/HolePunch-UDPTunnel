@@ -19,3 +19,12 @@ type ClientData struct {
 	LocalPort string `json:"local_port"`
 	LocalID   string `json:"local_ID"`
 }
+
+//todo: tunnel info struct
+// type TunnelInfo struct {
+// 	Interface	string
+// 	ClientID	string
+// 	ClientLIP	string
+// }
+
+//! add auth struct here to allow incoming connections?

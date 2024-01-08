@@ -10,17 +10,16 @@ import (
 	"time"
 	"net"
 
-	// tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
 	"go.uber.org/zap"
 )
 
 // Define the Hole Punch Server struct
 type HPServer struct {
+	// Client list
 	sync.RWMutex
 	ClientList map[string]ClientData
-
+	// Logger
 	l *zap.Logger
-
 	ConnLogC chan string
 }
 
@@ -160,8 +159,7 @@ func (s *HPServer) Serve(serverPort string) error {
 
 					//! or if the LocalID is not the requested RemoteID (remote ID also needs to accept/initiate the connection, 2way)
 					//! removed here so that any client can connect to any client in idle state
-
-					if err != nil /*|| clientFromMap.RemoteID != incomingRequest.LocalID*/ {
+					if err != nil || clientFromMap.RemoteID != incomingRequest.LocalID {
 						s.l.Info(incomingRequest.LocalID+" is waiting for "+incomingRequest.RemoteID)
 						// exit handle function
 						return

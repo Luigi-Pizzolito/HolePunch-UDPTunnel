@@ -22,7 +22,8 @@ type TUI struct {
 	logC chan string		// channel for redirecting main app log
 	ConnLogC chan string	// channel for redirecting connection history log
 
-	ConnectClientMap map[string]punch.ClientData 	// connection to HPServer's client list
+	HPServerConnectClientMap map[string]punch.ClientData 	// connection to HPServer's client list
+	HPClientConnectClientMap map[string]punch.ClientData	// connection to HPClient's client list
 	numClients int
 
 	app *tview.Application	// application reference
@@ -111,7 +112,7 @@ func (t *TUI) setupSharedUI(flex *tview.Flex) {
 		t.logs.ScrollToEnd()
 	})
 	t.logs.SetScrollable(true)
-	t.logs.SetBorder(true).SetTitle(" t.logs ")
+	t.logs.SetBorder(true).SetTitle(" Logs ")
 	t.logs.SetBackgroundColor(0)
 	// add to subflex
 	subflex.AddItem(t.logs, 0, 6, false)
@@ -217,7 +218,11 @@ func (t *TUI) setupServerUI(flex *tview.Flex) {
 }
 
 func (t *TUI) ConnectClientList(m map[string]punch.ClientData) {
-	t.ConnectClientMap = m;
+	if t.serverMode {
+		t.HPServerConnectClientMap = m;
+	} else {
+		t.HPServerConnectClientMap = m;
+	}
 }
 
 func (t *TUI) refreshUIData() {
@@ -241,39 +246,46 @@ func (t *TUI) refreshUIData() {
 			t.refreshServerUIData()
 		} else {
 			// Refresh client mode UI
-
+			t.refreshClientUIData()
 		}
 
 		// Refresh data in shared mode UI elements
-		// -- Client Info
-		// clear Client Info TextView
-		t.clientInfo.SetText("")
-		if t.clientList.GetItemCount() > 0 {
-			// get currently selected client
-			selectedCindex := t.clientList.GetCurrentItem();
-			selectedCname, _ := t.clientList.GetItemText(selectedCindex);
-			// populate Client Info TextView
-			if t.serverMode {
-				// get currently selected client info from HPServer
-				selectedC := t.ConnectClientMap[selectedCname];
-				// update client info
-				fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
-				fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
-			} else {
-				// get currently selected client info from HPClient
-				// todo: populate actual data from HPClient
-				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
-				fmt.Fprintf(t.clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
-				fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
-				fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
-			}
-		} else {
-			// show that no clients are selected if there are no clients
-			t.clientInfo.SetText("No clients selected.")
-		}
+		t.refreshSharedUIData();
 
 		// sleep to refresh at 10Hz
 		time.Sleep(100 * time.Millisecond)
+	}
+}
+
+func (t *TUI) refreshSharedUIData() {
+	// -- Client Info
+	// clear Client Info TextView
+	t.clientInfo.SetText("")
+	if t.clientList.GetItemCount() > 0 {
+		// get currently selected client
+		selectedCindex := t.clientList.GetCurrentItem();
+		selectedCname, _ := t.clientList.GetItemText(selectedCindex);
+		// populate Client Info TextView
+		if t.serverMode {
+			// get currently selected client info from HPServer
+			selectedC := t.HPServerConnectClientMap[selectedCname];
+			// update client info
+			fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
+			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
+		} else {
+			// get currently selected client info from HPClient
+			// todo: populate actual data from HPClient
+			selectedC := t.HPClientConnectClientMap[selectedCname];
+			fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
+			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
+			fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
+			fmt.Fprintf(t.clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
+			fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
+			fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
+		}
+	} else {
+		// show that no clients are selected if there are no clients
+		t.clientInfo.SetText("No clients selected.")
 	}
 }
 
@@ -281,14 +293,14 @@ func (t *TUI) refreshServerUIData() {
 	// Refresh data in HPServer mode UI elements
 	// -- Clients Queue
 	// get number of clients to determine if update is needed
-	if t.numClients != len(t.ConnectClientMap) {
+	if t.numClients != len(t.HPServerConnectClientMap) {
 		// update last number of clients to detect change next time
-		t.numClients = len(t.ConnectClientMap)
+		t.numClients = len(t.HPServerConnectClientMap)
 
 		// clear Clients Queue
 		t.clientList.Clear()
 		// populate Clients Queue
-		sortedClients := sortClientsFromMap(t.ConnectClientMap)
+		sortedClients := sortClientsFromMap(t.HPServerConnectClientMap)
 		for i, client := range sortedClients {
 			var status string
 			if client.RemoteID == "" {
@@ -299,6 +311,10 @@ func (t *TUI) refreshServerUIData() {
 			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
 		}
 	}
+}
+
+func (t *TUI) refreshClientUIData() {
+
 }
 
 func (t *TUI) RunApp() {
