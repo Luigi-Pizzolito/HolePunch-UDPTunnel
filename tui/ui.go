@@ -22,6 +22,7 @@ type TUI struct {
 	ConnLogC chan string	// channel for redirecting connection history log
 
 	ConnectClientMap map[string]punch.ClientData 	// connection to HPServer's client list
+	numClients int
 
 	app *tview.Application	// application reference
 	// application elements reference
@@ -71,6 +72,7 @@ func (t *TUI) Stage() {
 	}
 
 	// Automatically refresh UI element data using goroutine
+	t.numClients = 0
 	go t.refreshUIData()
 	
 }
@@ -231,10 +233,10 @@ func (t *TUI) refreshUIData() {
 
 		// Refresh data in shared mode UI elements
 		// -- Client Info
-		// get currently selected client
 		// clear Client Info TextView
-		t.clientInfo.SetText("No clients selected.")
+		t.clientInfo.SetText("")
 		if t.clientList.GetItemCount() > 0 {
+			// get currently selected client
 			selectedCindex := t.clientList.GetCurrentItem();
 			selectedCname, _ := t.clientList.GetItemText(selectedCindex);
 			// populate Client Info TextView
@@ -252,6 +254,9 @@ func (t *TUI) refreshUIData() {
 				fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
 				fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
 			}
+		} else {
+			// show that no clients are selected if there are no clients
+			t.clientInfo.SetText("No clients selected.")
 		}
 		// -- Logs
 		// copy t.logs recieved in log channel to UI text box
@@ -273,18 +278,24 @@ func (t *TUI) refreshUIData() {
 func (t *TUI) refreshServerUIData() {
 	// Refresh data in HPServer mode UI elements
 	// -- Clients Queue
-	// clear Clients Queue
-	t.clientList.Clear()
-	// populate Clients Queue
-	sortedClients := sortClientsFromMap(t.ConnectClientMap)
-	for i, client := range sortedClients {
-		var status string
-		if client.RemoteID == "" {
-			status = "Idle"
-		} else {
-			status = "[blue]Waiting for "+client.RemoteID+"[-]"
+	// get number of clients to determine if update is needed
+	if t.numClients != len(t.ConnectClientMap) {
+		// update last number of clients to detect change next time
+		t.numClients = len(t.ConnectClientMap)
+
+		// clear Clients Queue
+		t.clientList.Clear()
+		// populate Clients Queue
+		sortedClients := sortClientsFromMap(t.ConnectClientMap)
+		for i, client := range sortedClients {
+			var status string
+			if client.RemoteID == "" {
+				status = "Idle"
+			} else {
+				status = "[blue]Waiting for "+client.RemoteID+"[-]"
+			}
+			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
 		}
-		t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
 	}
 }
 
