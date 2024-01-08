@@ -6,21 +6,41 @@ import (
 	// "os"
 	"time"
 
+	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
+	"strconv"
+	"sort"
+
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 	"go.uber.org/zap"
 )
 
 type TUI struct {
-	L *zap.Logger
-	logC chan string
-	ConnLogC chan string
-	app *tview.Application
-	serverMode bool
+	// logging
+	L *zap.Logger			// handle for main app logger
+	logC chan string		// channel for redirecting main app log
+	ConnLogC chan string	// channel for redirecting connection history log
+
+	ConnectClientMap map[string]punch.ClientData 	// connection to HPServer's client list
+
+	app *tview.Application	// application reference
+	// application elements reference
+	// -- shared
+	logs *tview.TextView
+	clientInfo *tview.TextView
+	clientList *tview.List
+	selectedClient string
+	// -- client only
+	activeTunnels *tview.TreeView
+	// -- server only
+	ConnLogs *tview.TextView
+
+
+
+	serverMode bool			// server mode UI select
 }
 
 func Start(serverMode bool) *TUI {
-	
 	// Setup TUI
 	app := tview.NewApplication().EnableMouse(true);
 
@@ -49,6 +69,9 @@ func (t *TUI) Stage() {
 		// Holepunch client UI + UDP Tunnel UI
 		t.setupClientUI(flex)
 	}
+
+	// Automatically refresh UI element data using goroutine
+	go t.refreshUIData()
 	
 }
 
@@ -58,82 +81,53 @@ func (t *TUI) setupSharedUI(flex *tview.Flex) {
 	flex.AddItem(subflex, 0, 4, false)
 
 	// -- Client Info
-	clientInfo := tview.NewTextView().
+	t.clientInfo = tview.NewTextView().
 						SetDynamicColors(true).
 						SetRegions(true).
 						SetChangedFunc(func() {
 							t.app.Draw()
 						})
-	clientInfo.SetBorder(true).SetTitle(" Client Info ")
-	clientInfo.SetBackgroundColor(0)
-
-	fmt.Fprintf(clientInfo, " [\"name\"]Name: [green]Jesus[-][\"\"]\n")
-	fmt.Fprintf(clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://32.13.43.23:3213[-][\"\"]\n")
-	if !t.serverMode {
-		fmt.Fprintf(clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
-		fmt.Fprintf(clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
-		fmt.Fprintf(clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
-		fmt.Fprintf(clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
-	}
-	
+	t.clientInfo.SetBorder(true).SetTitle(" Client Info ")
+	t.clientInfo.SetBackgroundColor(0)
 	// add to subflex
 	if t.serverMode {
-		subflex.AddItem(clientInfo, 0, 2, false)
+		subflex.AddItem(t.clientInfo, 0, 2, false)
 	} else {
-		subflex.AddItem(clientInfo, 0, 4, false)
+		subflex.AddItem(t.clientInfo, 0, 4, false)
 	}
 
-
 	// -- Logs
-	logs := tview.NewTextView().
+	t.logs = tview.NewTextView().
 					SetDynamicColors(true).
 					SetRegions(true)
-	logs.SetChangedFunc(func() {
-		logs.ScrollToEnd()
+	t.logs.SetChangedFunc(func() {
+		t.logs.ScrollToEnd()
 		t.app.Draw()
 	})
-	logs.SetFocusFunc(func() {
-		logs.ScrollToEnd()
+	t.logs.SetFocusFunc(func() {
+		t.logs.ScrollToEnd()
 	})
-	logs.SetScrollable(true)
-	logs.SetBorder(true).SetTitle(" Logs ")
-	logs.SetBackgroundColor(0)
-	
-	// Go function to copy logs recieved in log channel to UI text box
-	go func() {
-		w := tview.ANSIWriter(logs)
-		for {
-			for str := range t.logC {
-				if _, err := io.WriteString(w, str); err != nil {
-					panic(err)
-				}
-			}
-			
-			time.Sleep(100 * time.Millisecond);
-		}
-	}()
-
+	t.logs.SetScrollable(true)
+	t.logs.SetBorder(true).SetTitle(" t.logs ")
+	t.logs.SetBackgroundColor(0)
 	// add to subflex
-	subflex.AddItem(logs, 0, 6, false)
+	subflex.AddItem(t.logs, 0, 6, false)
 }
 
 func (t *TUI) setupClientUI(flex *tview.Flex) {
 	// -- Client List
-	clientList := tview.NewList().
+	t.clientList = tview.NewList().
 		// ShowSecondaryText(false).
 		AddItem("Jesus", "Tunnel Inactive", '1', nil).
 		AddItem("Luigi", "[blue]10.0.0.3", '2', nil).
 		AddItem("Celine", "Tunnel Inactive", '3', nil).
 		AddItem("Lori", "[blue]10.0.0.2", '4', func() {
 			t.L.Info("Lori Clicked")
-		}).
-		AddItem("Quit", "Press q to exit", 'q', func() {
-			t.app.Stop()
 		})
-	clientList.SetBorder(true).SetTitle(" Clients Online ")
-	clientList.SetBackgroundColor(0)
+	t.clientList.SetBorder(true).SetTitle(" Clients Online ")
+	t.clientList.SetBackgroundColor(0)
 	// add to flex
-	flex.AddItem(clientList, 0, 2, true)
+	flex.AddItem(t.clientList, 0, 2, true)
 
 	// -- Shared UI elements (Client Info & Logs)
 	t.setupSharedUI(flex)
@@ -141,11 +135,11 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 	// -- Network Interfaces
 	root := tview.NewTreeNode("Network Interfaces").
 					SetSelectable(false)
-	activeTunnels := tview.NewTreeView().
+	t.activeTunnels = tview.NewTreeView().
 							SetRoot(root).
 							SetCurrentNode(nil)
-	activeTunnels.SetBorder(true).SetTitle(" Active Tunnels ")
-	activeTunnels.SetBackgroundColor(0)
+	t.activeTunnels.SetBorder(true).SetTitle(" Active Tunnels ")
+	t.activeTunnels.SetBackgroundColor(0)
 	//----
 	node := tview.NewTreeNode("tun0").
 				// SetReference(filepath.Join(path, file.Name())).
@@ -166,49 +160,42 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 				// SetReference(filepath.Join(path, file.Name())).
 				SetSelectable(false)
 	node2.AddChild(nnode2)
-
 	// add to flex 
-	flex.AddItem(activeTunnels, 0, 2, false)
+	flex.AddItem(t.activeTunnels, 0, 2, false)
 
 	// set app focus
-	t.app.SetFocus(clientList)
+	t.app.SetFocus(t.clientList)
 }
 
 func (t *TUI) setupServerUI(flex *tview.Flex) {
 	// -- Client List
-	clientList := tview.NewList().
-		// ShowSecondaryText(false).
-		AddItem("Jesus", "Idle", '1', nil).
-		AddItem("Luigi", "[blue]Waiting for Celine", '2', nil).
-		AddItem("Lori", "Idle", '3', func(){
-			t.ConnLogC <- "[gray]06:19:58[-] Lori [blue]->[-] Luigi\n"
-		})
-	clientList.SetBorder(true).SetTitle(" Clients Queue ")
-	clientList.SetBackgroundColor(0)
+	t.clientList = tview.NewList()
+	t.clientList.SetBorder(true).SetTitle(" Clients Queue ")
+	t.clientList.SetBackgroundColor(0)
 	// add to flex
-	flex.AddItem(clientList, 0, 2, true)
+	flex.AddItem(t.clientList, 0, 2, true)
 
 	// -- Shared UI elements (Client Info & Logs)
 	t.setupSharedUI(flex)
 
 	// -- Connection History
-	connlogs := tview.NewTextView().
+	t.ConnLogs = tview.NewTextView().
 					SetDynamicColors(true).
 					SetRegions(true)
-	connlogs.SetChangedFunc(func() {
-		connlogs.ScrollToEnd()
+	t.ConnLogs.SetChangedFunc(func() {
+		t.ConnLogs.ScrollToEnd()
 		t.app.Draw()
 	})
-	connlogs.SetFocusFunc(func() {
-		connlogs.ScrollToEnd()
+	t.ConnLogs.SetFocusFunc(func() {
+		t.ConnLogs.ScrollToEnd()
 	})
-	connlogs.SetScrollable(true)
-	connlogs.SetBorder(true).SetTitle(" Connection History ")
-	connlogs.SetBackgroundColor(0)
+	t.ConnLogs.SetScrollable(true)
+	t.ConnLogs.SetBorder(true).SetTitle(" Connection History ")
+	t.ConnLogs.SetBackgroundColor(0)
 	
-	// Go function to copy connlogs recieved in log channel to UI text box
+	// Go function to copy t.ConnLogs recieved in log channel to UI text box
 	go func() {
-		w := tview.ANSIWriter(connlogs)
+		w := tview.ANSIWriter(t.ConnLogs)
 		for {
 			for str := range t.ConnLogC {
 				if _, err := io.WriteString(w, str); err != nil {
@@ -219,16 +206,112 @@ func (t *TUI) setupServerUI(flex *tview.Flex) {
 			time.Sleep(200 * time.Millisecond);
 		}
 	}()
-
 	// add to flex
-	flex.AddItem(connlogs, 0, 2, false)
+	flex.AddItem(t.ConnLogs, 0, 2, false)
 
 	// set app focus
-	t.app.SetFocus(clientList)
+	t.app.SetFocus(t.clientList)
+}
+
+func (t *TUI) ConnectClientList(m map[string]punch.ClientData) {
+	t.ConnectClientMap = m;
+}
+
+func (t *TUI) refreshUIData() {
+	// loop to always refresh data
+	for {
+		// Refresh data in UI elements for server & client UI specifically
+		if t.serverMode {
+			// Refresh server mode UI
+			t.refreshServerUIData()
+		} else {
+			// Refresh client mode UI
+
+		}
+
+		// Refresh data in shared mode UI elements
+		// -- Client Info
+		// get currently selected client
+		// clear Client Info TextView
+		t.clientInfo.SetText("No clients selected.")
+		if t.clientList.GetItemCount() > 0 {
+			selectedCindex := t.clientList.GetCurrentItem();
+			selectedCname, _ := t.clientList.GetItemText(selectedCindex);
+			// populate Client Info TextView
+			if t.serverMode {
+				// get currently selected client info from HPServer
+				selectedC := t.ConnectClientMap[selectedCname];
+				// update client info
+				fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
+				fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
+			} else {
+				// get currently selected client info from HPClient
+				// todo: populate actual data from HPClient
+				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
+				fmt.Fprintf(t.clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
+				fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
+				fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
+			}
+		}
+		// -- Logs
+		// copy t.logs recieved in log channel to UI text box
+		// requires separate goroutine to not block
+		go func(){
+			w := tview.ANSIWriter(t.logs)
+			for str := range t.logC {
+				if _, err := io.WriteString(w, str); err != nil {
+					panic(err)
+				}
+			}
+		}()
+
+		// sleep to refresh at 10Hz
+		time.Sleep(100 * time.Millisecond)
+	}
+}
+
+func (t *TUI) refreshServerUIData() {
+	// Refresh data in HPServer mode UI elements
+	// -- Clients Queue
+	// clear Clients Queue
+	t.clientList.Clear()
+	// populate Clients Queue
+	sortedClients := sortClientsFromMap(t.ConnectClientMap)
+	for i, client := range sortedClients {
+		var status string
+		if client.RemoteID == "" {
+			status = "Idle"
+		} else {
+			status = "[blue]Waiting for "+client.RemoteID+"[-]"
+		}
+		t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
+	}
 }
 
 func (t *TUI) RunApp() {
 	if err := t.app.Run(); err != nil {
 		panic(err)
 	}
+}
+
+// utility functions
+func sortClientsFromMap(m map[string]punch.ClientData) []punch.ClientData {
+	// Collect keys from the map
+	keys := make([]string, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+
+	// Sort keys alphabetically
+	sort.Strings(keys)
+
+	// Create a slice to store sorted structs
+	sortedStructs := make([]punch.ClientData, len(keys))
+
+	// Populate sortedStructs with struct values in sorted order
+	for i, key := range keys {
+		sortedStructs[i] = m[key]
+	}
+
+	return sortedStructs
 }

@@ -39,7 +39,8 @@ func main() {
 	if infoExchangeServer {
 		// Info Exchange Server mode
 		// Start server
-		s := punch.NewHPServer(l, t)
+		s := punch.NewHPServer(l, t.ConnLogC)
+		t.ConnectClientList(s.ClientList)
 		go func(){
 			if err := s.Serve(serverPort); err != nil {
 				l.Fatal(err.Error())

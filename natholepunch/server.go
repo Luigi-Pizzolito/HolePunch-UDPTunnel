@@ -9,24 +9,34 @@ import (
 	"time"
 	"net"
 
-	tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
+	// tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
 	"go.uber.org/zap"
 )
 
 // Define the Hole Punch Server struct
 type HPServer struct {
 	sync.RWMutex
-	m map[string]ClientData
+	ClientList map[string]ClientData
+
 	l *zap.Logger
-	t *tui.TUI
+
+	ConnLogC chan string
 }
 
 // Initialises a pointer to a new HPServer struct
-func NewHPServer(l *zap.Logger, t *tui.TUI) *HPServer {
-	return &HPServer{m: make(map[string]ClientData), l: l, t: t}
+func NewHPServer(l *zap.Logger, ConnLogC chan string) *HPServer {
+	return &HPServer{ClientList: make(map[string]ClientData), l: l, ConnLogC: ConnLogC}
 }
 
 //-------- Server Functions --------
+// add client to clients queue map
+func (s *HPServer) addClient(c ClientData) {
+	s.Lock()
+	defer s.Unlock()
+	s.ClientList[c.LocalID] = c
+}
+
+// start serving and reply to client requests
 func (s *HPServer) Serve(serverPort string) error {
 	s.l.Info("Info Exchange Server mode")
 
@@ -68,10 +78,18 @@ func (s *HPServer) Serve(serverPort string) error {
 			// parse JSON request from client
 			json.Unmarshal(buf[:n], &incomingRequest)
 
+			// Add client to clients queue
 			s.l.Info("New client: "+incomingRequest.LocalID+"@"+newClientIP+":"+newClientPort)
+			s.addClient(ClientData{
+				RemoteID:  incomingRequest.RemoteID,
+				LocalID:   incomingRequest.LocalID,
+				LocalIP:   newClientIP,
+				LocalPort: newClientPort,
+			})
+
 
 			// Check if client wants server client list or requests a hole-punch
-			if incomingRequest.Punch {
+			if incomingRequest.RemoteID != "" {
 				// Client is requesting hole-punch addr of other client
 
 				// Check if other client is online
@@ -84,15 +102,13 @@ func (s *HPServer) Serve(serverPort string) error {
 
 			} else {
 				// Client is idle and wants list of online clients from server
-				s.l.Info(incomingRequest.LocalID+" fetched list of clients.")
 
+				// Return list of available online clients
+
+				s.l.Info(incomingRequest.LocalID+" fetched list of clients.")
 
 			}
 	
-			
-
-			
-
 			
 		}()
 	}
@@ -106,5 +122,5 @@ func (s *HPServer) printPunch(from string, to string) {
 	timeFormatted := time.Now().Format("15:04:05")
 
 	// Print to connection history
-	s.t.ConnLogC <- fmt.Sprintf(" [gray]%s[-] %s [blue]->[-] %s\n", timeFormatted, from, to)
+	s.ConnLogC <- fmt.Sprintf(" [gray]%s[-] %s [blue]->[-] %s\n", timeFormatted, from, to)
 }
