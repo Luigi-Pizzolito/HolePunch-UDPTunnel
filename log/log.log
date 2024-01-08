@@ -17331,3 +17331,361 @@
 2024-01-08T23:44:07.528+0800	[34mINFO[0m	natholepunch/server.go:47	Info Exchange Server mode
 2024-01-08T23:44:07.528+0800	[34mINFO[0m	natholepunch/server.go:64	Running server at udp://0.0.0.0:10001
 2024-01-08T23:44:09.636+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T01:45:34.557+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T01:45:34.557+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T01:45:34.557+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T01:45:58.245+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Alice@127.0.0.1:60404
+2024-01-09T01:45:58.245+0800	[34mINFO[0m	natholepunch/server.go:126	Alice fetched list of clients.
+2024-01-09T01:46:01.247+0800	[34mINFO[0m	natholepunch/server.go:126	Alice fetched list of clients.
+2024-01-09T01:46:14.926+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:37055
+2024-01-09T01:46:14.926+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:46:17.927+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:46:20.929+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:46:23.931+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:46:50.452+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:46:54.866+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:46:57.868+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:00.870+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:03.871+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:06.873+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:09.875+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:10.835+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:56251
+2024-01-09T01:47:10.835+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:12.877+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:13.838+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:15.880+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:16.839+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:18.882+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:19.842+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:21.884+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:22.842+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:24.884+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:25.844+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:27.887+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:28.847+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:30.889+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:31.847+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:33.891+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:34.849+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:36.893+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:37.851+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:39.895+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:40.852+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:42.897+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:43.854+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:45.900+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:46.855+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:48.901+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:49.857+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:51.903+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:47:52.859+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:55.861+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:47:58.862+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:48:01.863+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:48:03.438+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T01:49:21.993+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T01:49:25.651+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T01:49:25.651+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T01:49:25.652+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T01:49:27.810+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:56259
+2024-01-09T01:49:27.810+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:49:29.449+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:40588
+2024-01-09T01:49:29.449+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T01:49:47.609+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T01:49:48.961+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T01:49:48.961+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T01:49:48.962+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T01:49:52.022+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:47312
+2024-01-09T01:49:52.022+0800	[34mINFO[0m	natholepunch/server.go:136	luigipizzolito is waiting for Celine
+2024-01-09T01:49:54.619+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:46501
+2024-01-09T01:49:54.619+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T01:50:28.337+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:33753
+2024-01-09T01:50:28.338+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T01:50:31.698+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:54321
+2024-01-09T01:50:31.699+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T01:50:43.225+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:44311
+2024-01-09T01:50:43.225+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T01:50:50.222+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:37695
+2024-01-09T01:50:50.222+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T01:51:43.265+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T01:51:44.924+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T01:51:44.924+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T01:51:44.924+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T01:51:56.186+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:47925
+2024-01-09T01:51:56.186+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:51:59.187+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:02.188+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:03.788+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:38156
+2024-01-09T01:52:03.788+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:05.191+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:06.789+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:08.191+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:09.790+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:11.192+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:12.791+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:14.194+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:15.792+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:17.196+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:18.792+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:20.198+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:21.794+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:23.200+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:24.796+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:26.201+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:27.797+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:29.202+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:30.800+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:32.204+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:33.801+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:35.206+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:36.803+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:38.207+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:39.805+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:41.210+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:42.805+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:44.212+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:45.806+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:47.214+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:48.809+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:50.216+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:51.811+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:53.218+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:52:54.813+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:52:57.814+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:53:00.816+0800	[34mINFO[0m	natholepunch/server.go:136	Celine is waiting for luigipizzolito
+2024-01-09T01:54:45.839+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T01:54:47.117+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T01:54:47.117+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T01:54:47.118+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T01:54:48.899+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:51785
+2024-01-09T01:54:48.899+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:54:51.902+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:54:54.903+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T01:54:55.463+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:55785
+2024-01-09T01:54:55.464+0800	[34mINFO[0m	natholepunch/server.go:193	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:03:41.778+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:04:51.304+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:04:51.305+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:04:51.305+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:04:56.869+0800	[34mINFO[0m	natholepunch/server.go:111	New client: luigipizzolito@127.0.0.1:45074
+2024-01-09T02:04:56.869+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T02:04:59.871+0800	[34mINFO[0m	natholepunch/server.go:126	luigipizzolito fetched list of clients.
+2024-01-09T02:05:00.972+0800	[34mINFO[0m	natholepunch/server.go:111	New client: Celine@127.0.0.1:44115
+2024-01-09T02:05:00.972+0800	[34mINFO[0m	natholepunch/server.go:197	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:16:28.545+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:16:29.720+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:16:29.720+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:16:29.721+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:16:35.034+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:53591
+2024-01-09T02:16:35.034+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigipizzolito
+2024-01-09T02:16:38.037+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigipizzolito
+2024-01-09T02:16:41.038+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigipizzolito
+2024-01-09T02:16:43.229+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:39378
+2024-01-09T02:16:43.229+0800	[34mINFO[0m	natholepunch/server.go:145	luigipizzolito fetched list of clients.
+2024-01-09T02:16:44.041+0800	[34mINFO[0m	natholepunch/server.go:216	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:17:40.224+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:56694
+2024-01-09T02:17:40.224+0800	[34mINFO[0m	natholepunch/server.go:216	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:17:43.290+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:17:43.989+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:17:43.989+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:17:43.989+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:17:46.076+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:52488
+2024-01-09T02:17:46.076+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigipizzolito
+2024-01-09T02:17:49.077+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigipizzolito
+2024-01-09T02:17:51.789+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:52666
+2024-01-09T02:17:51.789+0800	[34mINFO[0m	natholepunch/server.go:145	luigipizzolito fetched list of clients.
+2024-01-09T02:17:52.078+0800	[34mINFO[0m	natholepunch/server.go:216	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:18:54.186+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:59452
+2024-01-09T02:18:54.186+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:18:57.187+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:18:59.059+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:19:00.705+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:19:00.705+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:19:00.706+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:19:03.192+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:59452
+2024-01-09T02:19:03.192+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:05.537+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:45870
+2024-01-09T02:19:05.537+0800	[34mINFO[0m	natholepunch/server.go:145	luigipizzolito fetched list of clients.
+2024-01-09T02:19:06.194+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:09.196+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:12.197+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:15.200+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:18.203+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:21.204+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:24.205+0800	[34mINFO[0m	natholepunch/server.go:158	Celine is waiting for luigi
+2024-01-09T02:19:37.750+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:19:57.929+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:19:57.929+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:19:57.929+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:20:09.868+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:48326
+2024-01-09T02:20:09.868+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:20:12.870+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:20:14.354+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:34837
+2024-01-09T02:20:14.355+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"48326","local_ID":"Celine"},"luigipizzolito":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"34837","local_ID":"luigipizzolito"}}
+2024-01-09T02:20:14.355+0800	[34mINFO[0m	natholepunch/server.go:146	luigipizzolito fetched list of clients.
+2024-01-09T02:20:15.871+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:20:18.872+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:20:21.874+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:20:24.876+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:20:27.877+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:21:44.563+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:21:45.353+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:21:45.353+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:21:45.353+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:21:47.101+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:46643
+2024-01-09T02:21:47.101+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:21:49.566+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:44554
+2024-01-09T02:21:49.566+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"46643","local_ID":"Celine"},"luigipizzolito":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"44554","local_ID":"luigipizzolito"}}
+2024-01-09T02:21:49.566+0800	[34mINFO[0m	natholepunch/server.go:146	luigipizzolito fetched list of clients.
+2024-01-09T02:21:50.103+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:21:53.104+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:21:56.106+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:21:57.039+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:24:22.628+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:24:22.629+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:24:22.629+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:24:25.211+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:36021
+2024-01-09T02:24:25.212+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:28.212+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:31.214+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:33.121+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"55282","local_ID":"Celine"}}
+2024-01-09T02:24:33.122+0800	[34mINFO[0m	natholepunch/server.go:146	Celine fetched list of clients.
+2024-01-09T02:24:34.214+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:37.215+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:40.217+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:42.546+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:51888
+2024-01-09T02:24:42.546+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"36021","local_ID":"Celine"},"luigipizzolito":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"51888","local_ID":"luigipizzolito"}}
+2024-01-09T02:24:42.546+0800	[34mINFO[0m	natholepunch/server.go:146	luigipizzolito fetched list of clients.
+2024-01-09T02:24:43.220+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:46.222+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:49.224+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:52.225+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:54.555+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"36021","local_ID":"Celine"},"luigipizzolito":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"60498","local_ID":"luigipizzolito"}}
+2024-01-09T02:24:54.555+0800	[34mINFO[0m	natholepunch/server.go:146	luigipizzolito fetched list of clients.
+2024-01-09T02:24:55.227+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:24:56.495+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"36021","local_ID":"Celine"},"luigipizzolito":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"40683","local_ID":"luigipizzolito"}}
+2024-01-09T02:24:56.495+0800	[34mINFO[0m	natholepunch/server.go:146	luigipizzolito fetched list of clients.
+2024-01-09T02:24:58.230+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:25:01.232+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:25:04.235+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:25:07.236+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:25:08.505+0800	[33mWARN[0m	natholepunch/server.go:137	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"36021","local_ID":"Celine"},"luigipizzolito":{"remote_addr":"","local_addr":"127.0.0.1","local_port":"41969","local_ID":"luigipizzolito"}}
+2024-01-09T02:25:08.505+0800	[34mINFO[0m	natholepunch/server.go:146	luigipizzolito fetched list of clients.
+2024-01-09T02:25:10.239+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:25:13.241+0800	[34mINFO[0m	natholepunch/server.go:159	Celine is waiting for luigi
+2024-01-09T02:26:37.089+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:26:45.986+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:26:45.987+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:26:45.987+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:26:55.636+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:41806
+2024-01-09T02:26:55.636+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:26:58.637+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:01.639+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:03.667+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:54584
+2024-01-09T02:27:03.667+0800	[33mWARN[0m	natholepunch/server.go:141	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"41806","local_ID":"Celine"}}
+2024-01-09T02:27:03.667+0800	[34mINFO[0m	natholepunch/server.go:150	luigipizzolito fetched list of clients.
+2024-01-09T02:27:04.641+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:07.642+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:10.644+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:13.644+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:16.645+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:19.647+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:22.648+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:25.651+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:28.653+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:31.654+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:34.655+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:37.656+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:40.658+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:43.660+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:46.660+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:49.661+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:27:52.662+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigi
+2024-01-09T02:30:12.358+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:30:22.911+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:30:22.911+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:30:22.911+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:30:24.550+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:56562
+2024-01-09T02:30:24.550+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:30:27.552+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:30:30.555+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:30:33.557+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:30:34.919+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:52229
+2024-01-09T02:30:34.919+0800	[33mWARN[0m	natholepunch/server.go:144	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"56562","local_ID":"Celine"}}
+2024-01-09T02:30:34.919+0800	[34mINFO[0m	natholepunch/server.go:153	luigipizzolito fetched list of clients.
+2024-01-09T02:30:36.559+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:34:20.882+0800	[33mWARN[0m	natholepunch/server.go:144	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"56562","local_ID":"Celine"}}
+2024-01-09T02:34:20.883+0800	[34mINFO[0m	natholepunch/server.go:153	luigipizzolito fetched list of clients.
+2024-01-09T02:34:27.541+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:34:30.543+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:34:32.893+0800	[33mWARN[0m	natholepunch/server.go:144	{"Celine":{"remote_addr":"luigi","local_addr":"127.0.0.1","local_port":"43365","local_ID":"Celine"}}
+2024-01-09T02:34:32.893+0800	[34mINFO[0m	natholepunch/server.go:153	luigipizzolito fetched list of clients.
+2024-01-09T02:34:33.544+0800	[34mINFO[0m	natholepunch/server.go:166	Celine is waiting for luigi
+2024-01-09T02:34:39.527+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:34:51.537+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:42037
+2024-01-09T02:34:51.537+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:35:03.544+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:35541
+2024-01-09T02:35:03.544+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:35:15.551+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:55065
+2024-01-09T02:35:15.551+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:35:27.561+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:59287
+2024-01-09T02:35:27.561+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:35:39.564+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:38816
+2024-01-09T02:35:39.565+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:35:51.568+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:39737
+2024-01-09T02:35:51.568+0800	[34mINFO[0m	natholepunch/server.go:224	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:35:57.692+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:35:58.879+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:35:58.880+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:35:58.880+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:36:01.936+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:53058
+2024-01-09T02:36:01.937+0800	[34mINFO[0m	natholepunch/server.go:152	luigipizzolito fetched list of clients.
+2024-01-09T02:36:04.359+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:47793
+2024-01-09T02:36:04.360+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:36:16.369+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:55889
+2024-01-09T02:36:16.369+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:36:28.379+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:34852
+2024-01-09T02:36:28.380+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:36:40.387+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:44999
+2024-01-09T02:36:40.388+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:36:52.397+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:54041
+2024-01-09T02:36:52.398+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:37:04.400+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:50763
+2024-01-09T02:37:04.400+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:37:16.401+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:58917
+2024-01-09T02:37:16.401+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:37:20.128+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:37:21.221+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:37:21.222+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:37:21.222+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:37:22.409+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:58583
+2024-01-09T02:37:22.409+0800	[34mINFO[0m	natholepunch/server.go:165	Celine is waiting for luigipizzolito
+2024-01-09T02:37:25.411+0800	[34mINFO[0m	natholepunch/server.go:165	Celine is waiting for luigipizzolito
+2024-01-09T02:37:28.413+0800	[34mINFO[0m	natholepunch/server.go:165	Celine is waiting for luigipizzolito
+2024-01-09T02:37:30.197+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:58838
+2024-01-09T02:37:30.197+0800	[34mINFO[0m	natholepunch/server.go:152	luigipizzolito fetched list of clients.
+2024-01-09T02:37:31.416+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:37:43.420+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:53918
+2024-01-09T02:37:43.420+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:37:55.427+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:48803
+2024-01-09T02:37:55.428+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:38:07.437+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:51288
+2024-01-09T02:38:07.438+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:38:19.447+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:58344
+2024-01-09T02:38:19.447+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:38:31.458+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:59376
+2024-01-09T02:38:31.458+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:38:43.345+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:38:44.530+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:38:44.530+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:38:44.530+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
+2024-01-09T02:38:46.506+0800	[34mINFO[0m	natholepunch/server.go:117	New client: Celine@127.0.0.1:46924
+2024-01-09T02:38:46.506+0800	[34mINFO[0m	natholepunch/server.go:165	Celine is waiting for luigipizzolito
+2024-01-09T02:38:49.508+0800	[34mINFO[0m	natholepunch/server.go:165	Celine is waiting for luigipizzolito
+2024-01-09T02:38:50.048+0800	[34mINFO[0m	natholepunch/server.go:117	New client: luigipizzolito@127.0.0.1:42860
+2024-01-09T02:38:50.049+0800	[34mINFO[0m	natholepunch/server.go:165	luigipizzolito is waiting for 123
+2024-01-09T02:38:52.511+0800	[34mINFO[0m	natholepunch/server.go:223	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T02:39:22.262+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T02:39:23.998+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:67	Hole Punch UDP Tunnel V1.0
+2024-01-09T02:39:23.999+0800	[34mINFO[0m	natholepunch/server.go:58	Info Exchange Server mode
+2024-01-09T02:39:23.999+0800	[34mINFO[0m	natholepunch/server.go:75	Running server at udp://0.0.0.0:10001
