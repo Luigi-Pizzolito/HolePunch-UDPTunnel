@@ -51,12 +51,14 @@ func teardown(l *zap.Logger, serverMode bool) {
 
 	if !serverMode {
 		// Client mode termination
-		//todo: Send a request to server to inform client going offline
-
+		//Send a request to server to inform client going offline
+		punch.StopHPClient(l, infoAddr, serverPort, localID)
 	}
 }
 
 func main() {
+	//todo: add graceful exit
+
 	// Setup TUI
 	t := tui.Start(infoExchangeServer)
 	t.Build()
@@ -82,11 +84,16 @@ func main() {
 				l.Fatal(err.Error())
 			}
 		}()
-		
+
 	} else {
 
 		// Holepunch + UDP Tunnel client mode
-
+		c := punch.NewHPClient(l, timeout, infoAddr, serverPort, localID, remoteID)
+		go func(){
+			if err := c.Run(); err != nil {
+				l.Fatal(err.Error())
+			}
+		}()
 
 	}
 

@@ -18,6 +18,8 @@ type ClientData struct {
 	LocalIP   string `json:"local_addr"`
 	LocalPort string `json:"local_port"`
 	LocalID   string `json:"local_ID"`
+	//todo: add ping field for client
+	Ping	  string //`json:"ping"`
 }
 
 //todo: tunnel info struct

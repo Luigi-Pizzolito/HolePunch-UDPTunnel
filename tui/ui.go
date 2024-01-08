@@ -25,6 +25,8 @@ type TUI struct {
 	HPServerConnectClientMap map[string]punch.ClientData 	// connection to HPServer's client list
 	HPClientConnectClientMap map[string]punch.ClientData	// connection to HPClient's client list
 	numClients int
+	
+	//todo: bind udptunnel tunnel info
 
 	app *tview.Application	// application reference
 	// application elements reference
