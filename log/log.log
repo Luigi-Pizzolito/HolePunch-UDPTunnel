@@ -17964,3 +17964,1572 @@
 2024-01-09T04:57:19.393+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
 2024-01-09T04:57:19.393+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
 2024-01-09T04:57:41.234+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T04:58:59.527+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:14:06.280+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:14:06.280+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T05:14:06.280+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T05:16:35.604+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:16:36.545+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:16:36.546+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T05:16:36.546+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T05:16:38.842+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:16:38.843+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T05:16:38.843+0800	[33mWARN[0m	natholepunch/server.go:69	Error listening to UDP connections: listen udp :10001: bind: address already in use
+2024-01-09T05:16:38.843+0800	[31mFATAL[0m	HolePunch-UDPTunnel/main.go:84	listen udp :10001: bind: address already in use
+2024-01-09T05:16:55.761+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:17:05.021+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:17:05.022+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T05:17:05.022+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T05:17:10.567+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:17:10.567+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:17:10.568+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:49085
+2024-01-09T05:17:10.568+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:11.570+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:12.571+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:13.572+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:14.573+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:15.574+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:16.574+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:17.575+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:18.575+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:19.576+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:20.578+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:21.578+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:22.580+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:23.581+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:24.582+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:25.583+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:26.585+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:27.586+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:28.586+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:29.587+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:30.588+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:31.588+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:32.589+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:33.590+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:34.591+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:35.592+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:36.593+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:37.594+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:38.596+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:39.597+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:40.598+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:41.598+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:42.599+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:43.600+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:44.601+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:45.603+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:46.603+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:47.605+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:48.606+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:49.606+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:50.608+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:51.609+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:52.610+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:53.610+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:54.612+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:55.612+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:56.614+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:57.615+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:58.616+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:17:59.617+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:00.618+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:01.619+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:02.620+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:03.621+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:04.622+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:05.623+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:06.624+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:07.624+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:08.625+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:09.626+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:10.627+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:11.628+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:12.629+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:13.630+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:14.631+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:15.632+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:16.633+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:17.635+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:18.637+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:19.637+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T05:18:20.444+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:18:20.444+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:18:25.143+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:18:25.143+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:18:25.144+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:42188
+2024-01-09T05:18:25.144+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:26.145+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:27.147+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:28.148+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:29.150+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:30.151+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:31.153+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:32.154+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:33.154+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:34.156+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:35.156+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:36.158+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:37.159+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:38.160+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:39.161+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:40.162+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:41.163+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:42.164+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:43.165+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:44.165+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:45.166+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:46.167+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:47.168+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:48.169+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:49.170+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:50.171+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:51.172+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:52.172+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:53.174+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:54.175+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:18:55.119+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:18:55.120+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:20:22.600+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:20:22.600+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:20:22.601+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:50211
+2024-01-09T05:20:22.601+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:23.602+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:24.603+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:25.604+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:26.606+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:27.607+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:28.608+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:29.609+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:30.611+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:31.611+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:32.613+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:33.614+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:34.615+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:35.616+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:36.617+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:37.618+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:38.619+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:39.620+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:40.620+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:41.622+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:42.623+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:43.624+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:44.625+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:45.626+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:46.626+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:47.628+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:48.629+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:49.631+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:50.631+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:51.633+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:52.634+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:53.634+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:54.636+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:55.636+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:56.637+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:57.638+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:58.639+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:20:59.640+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:00.548+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:21:00.548+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:21:09.536+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:21:09.536+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:21:09.537+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:55831
+2024-01-09T05:21:09.537+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:10.539+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:11.540+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:12.542+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:13.542+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:14.544+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:15.545+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:16.546+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:17.548+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:18.549+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:19.253+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:57235
+2024-01-09T05:21:19.253+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:21:19.550+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:21:22.253+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:21:25.022+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:47547
+2024-01-09T05:21:25.023+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:21:29.646+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:21:31.687+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:21:53.946+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:21:55.179+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:21:55.179+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T05:21:55.180+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T05:22:01.744+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:22:01.744+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:22:01.745+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:34330
+2024-01-09T05:22:01.745+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:22:02.747+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:22:03.748+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:22:04.749+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:22:05.378+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:53389
+2024-01-09T05:22:05.378+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:05.750+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:22:08.380+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:11.380+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:14.382+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:17.383+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:20.384+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:23.384+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:26.386+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:29.387+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:32.390+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:35.391+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:38.393+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:41.393+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:44.395+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:47.396+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:50.398+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:53.400+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:56.402+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:22:59.403+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:23:02.403+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:26:13.941+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:26:13.942+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:26:13.943+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:14.943+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:15.945+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:16.946+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:17.947+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:18.947+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:19.948+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:20.949+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:21.951+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:22.952+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:23.953+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:24.954+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:25.955+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:26.956+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:27.957+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:28.958+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:29.959+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:30.961+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:31.962+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:32.963+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:33.964+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:34.966+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:35.967+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:36.968+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:37.969+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:38.971+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:39.972+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:40.973+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:41.974+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:42.976+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:43.977+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:44.978+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:45.979+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:46.980+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:47.982+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:48.420+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:26:48.420+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:26:49.363+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:26:49.364+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:26:49.364+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:59914
+2024-01-09T05:26:49.364+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:50.366+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:51.367+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:52.368+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:53.369+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:54.371+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:55.372+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:56.374+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:57.375+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:58.376+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:26:59.377+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:00.378+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:01.379+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:02.055+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:27:02.380+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:03.381+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:03.852+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:38650
+2024-01-09T05:27:03.852+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:27:04.382+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:05.383+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:06.384+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:07.385+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:08.386+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:09.388+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:10.389+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:11.391+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:12.392+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:13.394+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:13.684+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:27:14.370+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:54233
+2024-01-09T05:27:14.370+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:27:14.395+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:15.396+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:16.397+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:17.398+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:18.400+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:18.849+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:27:19.401+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:19.458+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:57850
+2024-01-09T05:27:19.458+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:27:20.401+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:21.402+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:22.404+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:22.459+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:27:23.406+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:24.407+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:25.409+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:25.462+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:27:26.373+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:35603
+2024-01-09T05:27:26.374+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:27:26.409+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:27.410+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:28.411+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:29.412+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:30.413+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:31.413+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:32.414+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:33.417+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:34.418+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:35.420+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:35.682+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:27:36.421+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:37.422+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:38.423+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:38.684+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:27:39.423+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:39.827+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:41686
+2024-01-09T05:27:39.828+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:27:40.424+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:41.425+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:42.425+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:43.427+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:44.427+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:45.429+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:46.337+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:27:46.430+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:46.952+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:33105
+2024-01-09T05:27:46.953+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:27:47.431+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:48.432+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:49.433+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:50.435+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:51.436+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:52.438+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:52.637+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:27:53.439+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:54.439+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:55.440+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:56.441+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:57.443+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:58.444+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:27:59.445+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:00.446+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:01.447+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:02.447+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:03.449+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:04.450+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:05.451+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:06.451+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:07.452+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:08.453+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:09.454+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:10.456+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:11.457+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:12.458+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:13.458+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:14.459+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:15.460+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:16.461+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:17.462+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:18.462+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:19.463+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:20.465+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:21.465+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:22.466+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:28:22.812+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:28:22.812+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:31:07.364+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:31:07.364+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:31:07.364+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:59378
+2024-01-09T05:31:07.365+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:08.366+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:09.367+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:10.368+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:11.369+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:12.371+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:13.372+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:14.373+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:15.374+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:16.375+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:16.465+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:60477
+2024-01-09T05:31:16.465+0800	[34mINFO[0m	natholepunch/server.go:163	luigipizzolito is waiting for Celine
+2024-01-09T05:31:17.376+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:18.377+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:19.377+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:19.466+0800	[34mINFO[0m	natholepunch/server.go:163	luigipizzolito is waiting for Celine
+2024-01-09T05:31:20.259+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:44023
+2024-01-09T05:31:20.259+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: Celine -> luigipizzolito
+2024-01-09T05:31:20.379+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:21.380+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:22.381+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:23.381+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:24.382+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:25.383+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:26.384+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:26.701+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:31:27.385+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:28.387+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:29.387+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:30.389+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:31.390+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:32.392+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:33.392+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:34.394+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:35.396+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:36.397+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:37.398+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:38.398+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:39.400+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:40.401+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:41.402+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:42.403+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:43.404+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:44.405+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:45.407+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:46.407+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:47.408+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:48.410+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:49.411+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:50.412+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:51.413+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:52.414+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:53.415+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:54.416+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:55.417+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:56.418+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:57.419+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:58.420+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:31:59.421+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:00.423+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:01.424+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:02.425+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:03.426+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:04.427+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:05.428+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:06.428+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:07.430+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:08.431+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:09.433+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:10.434+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:11.435+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:12.437+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:13.437+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:14.438+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:15.439+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:16.441+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:17.442+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:18.443+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:19.444+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:20.446+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:21.447+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:22.449+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:23.450+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:24.451+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:25.453+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:26.454+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:27.455+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:28.457+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:29.457+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:30.458+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:31.459+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:32.460+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:33.461+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:34.461+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:35.462+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:35.514+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:32:35.514+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:32:37.511+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:32:37.512+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:32:37.512+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:50344
+2024-01-09T05:32:37.513+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:38.514+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:39.516+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:40.056+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:41752
+2024-01-09T05:32:40.056+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:32:40.517+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:41.519+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:42.520+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:43.057+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:32:43.460+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:45329
+2024-01-09T05:32:43.460+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:32:43.520+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:44.521+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:45.522+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:46.524+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:47.524+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:48.525+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:48.530+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:32:48.966+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:32:49.526+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:50.527+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:51.528+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:52.531+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:53.532+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:54.533+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:55.533+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:56.534+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:57.535+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:58.536+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:32:59.538+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:00.539+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:01.540+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:02.541+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:03.542+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:04.543+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:05.545+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:06.545+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:07.547+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:08.548+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:09.549+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:10.550+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:11.551+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:12.551+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:13.552+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:14.553+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:15.554+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:16.555+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:17.556+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:18.557+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:19.557+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:20.558+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:21.559+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:22.560+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:23.561+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:24.561+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:25.563+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:26.564+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:27.565+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:28.566+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:29.567+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:30.567+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:31.568+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:32.569+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:33.570+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:34.572+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:35.573+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:36.574+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:37.575+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:38.577+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:39.578+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:40.579+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:41.580+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:42.581+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:43.582+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:44.584+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:45.584+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:46.585+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:47.585+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:48.586+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:49.587+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:50.589+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:51.589+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:52.590+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:53.592+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:54.593+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:55.595+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:56.595+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:57.597+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:58.598+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:33:59.599+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:00.600+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:01.601+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:02.602+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:03.603+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:04.603+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:04.950+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:34:04.950+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:34:06.575+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:34:06.575+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:34:06.575+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:45891
+2024-01-09T05:34:06.576+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:07.576+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:08.578+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:09.578+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:10.579+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:10.694+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:50459
+2024-01-09T05:34:10.694+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:34:11.580+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:12.581+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:12.595+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:46913
+2024-01-09T05:34:12.595+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:34:13.582+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:14.583+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:15.583+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:16.585+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:17.586+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:18.586+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:19.587+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:20.588+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:21.590+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:22.590+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:23.592+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:24.593+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:25.594+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:26.596+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:27.596+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:28.598+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:29.598+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:30.599+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:31.600+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:32.600+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:33.601+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:34.602+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:35.603+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:36.605+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:37.606+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:38.607+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:39.609+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:40.610+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:41.610+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:42.611+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:43.613+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:44.614+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:45.615+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:46.616+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:47.617+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:48.618+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:49.619+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:50.621+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:51.623+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:52.624+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:53.625+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:54.626+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:55.627+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:56.628+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:57.630+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:58.631+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:34:59.631+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:00.632+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:01.633+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:02.634+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:03.635+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:04.636+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:05.637+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:06.638+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:07.639+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:08.640+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:09.641+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:10.642+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:11.643+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:12.643+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:13.645+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:14.645+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:14.819+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:35:14.819+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:35:21.583+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:35:21.583+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:35:21.583+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:59738
+2024-01-09T05:35:21.583+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:22.584+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:23.586+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:24.588+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:25.589+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:26.590+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:27.590+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:28.592+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:29.593+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:30.595+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:31.596+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:32.597+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:33.598+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:34.599+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:35.601+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:36.602+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:37.603+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:38.604+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:39.605+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:40.606+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:41.607+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:42.609+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:43.610+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:44.611+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:45.612+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:46.613+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:47.614+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:47.919+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:35:48.615+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:48.972+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:47697
+2024-01-09T05:35:48.972+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:35:49.617+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:50.619+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:51.619+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:52.621+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:53.622+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:54.494+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:35:54.624+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:55.625+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:55.786+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:47702
+2024-01-09T05:35:55.786+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:35:56.626+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:57.627+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:58.628+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:35:58.789+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:35:59.629+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:00.631+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:00.980+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:44083
+2024-01-09T05:36:00.980+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:36:01.632+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:02.144+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:39948
+2024-01-09T05:36:02.144+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:36:02.633+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:03.634+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:04.635+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:05.636+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:06.638+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:07.639+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:08.641+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:09.642+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:10.643+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:11.645+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:12.646+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:13.647+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:14.153+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:48170
+2024-01-09T05:36:14.153+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:36:14.648+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:15.649+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:16.649+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:17.650+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:18.651+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:19.652+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:20.653+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:21.655+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:22.655+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:23.657+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:24.659+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:25.659+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:26.163+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:34811
+2024-01-09T05:36:26.163+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:36:26.660+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:27.661+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:28.662+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:29.664+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:30.664+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:31.665+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:32.667+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:33.668+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:34.670+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:35.670+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:36.672+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:37.672+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:38.173+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:43889
+2024-01-09T05:36:38.173+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:36:38.673+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:39.675+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:40.676+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:41.679+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:42.680+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:43.682+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:44.683+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:45.685+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:46.686+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:47.687+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:48.689+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:49.690+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:50.180+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:60247
+2024-01-09T05:36:50.180+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:36:50.691+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:51.692+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:52.693+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:53.694+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:54.696+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:55.697+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:56.699+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:57.700+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:58.701+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:36:59.701+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:00.702+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:01.703+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:02.181+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:47711
+2024-01-09T05:37:02.181+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:37:02.704+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:03.705+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:04.706+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:05.707+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:06.709+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:07.711+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:08.712+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:09.713+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:10.714+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:11.715+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:12.716+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:13.718+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:14.183+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:50807
+2024-01-09T05:37:14.183+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:37:14.719+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:15.720+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:16.721+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:17.722+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:18.723+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:19.725+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:20.726+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:21.727+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:22.729+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:23.730+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:24.732+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:25.733+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:26.186+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:48676
+2024-01-09T05:37:26.186+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:37:26.735+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:27.737+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:28.738+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:29.739+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:30.741+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:31.741+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:32.742+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:33.743+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:34.744+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:35.745+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:36.746+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:37.746+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:38.188+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:50381
+2024-01-09T05:37:38.188+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:37:38.747+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:39.747+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:40.748+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:41.749+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:42.751+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:43.752+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:44.753+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:45.754+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:46.755+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:47.755+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:48.756+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:49.757+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:50.191+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:49695
+2024-01-09T05:37:50.191+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:37:50.759+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:51.760+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:52.761+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:53.763+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:54.764+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:55.765+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:56.766+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:57.766+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:58.767+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:37:59.768+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:00.769+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:01.770+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:02.193+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:36269
+2024-01-09T05:38:02.193+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:38:02.771+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:03.772+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:04.774+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:05.775+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:06.776+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:07.777+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:08.778+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:09.779+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:10.780+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:11.781+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:12.783+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:13.785+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:13.831+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:38:13.832+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:38:14.195+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:39590
+2024-01-09T05:38:14.196+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:38:18.294+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:38:18.294+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:38:18.295+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:41012
+2024-01-09T05:38:18.295+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:19.296+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:20.298+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:21.299+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:22.300+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:23.301+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:24.302+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:25.303+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:26.198+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:46027
+2024-01-09T05:38:26.198+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:38:26.304+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:27.306+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:28.306+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:29.307+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:30.308+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:31.309+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:32.310+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:33.311+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:34.312+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:35.313+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:36.314+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:37.315+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:38.199+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:36858
+2024-01-09T05:38:38.200+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:38:38.315+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:39.316+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:40.319+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:41.319+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:42.321+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:43.321+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:44.323+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:45.324+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:46.326+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:47.327+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:48.327+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:49.329+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:50.202+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:43371
+2024-01-09T05:38:50.202+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:38:50.330+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:51.332+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:52.333+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:53.334+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:54.335+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:55.336+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:56.337+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:57.339+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:58.340+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:38:59.341+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:40:33.717+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:47:59.478+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:47:59.478+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T05:47:59.479+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T05:48:04.330+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:48:04.330+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:48:04.330+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:38393
+2024-01-09T05:48:04.331+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:05.332+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:06.332+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:07.333+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:08.069+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:50029
+2024-01-09T05:48:08.069+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:48:08.334+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:09.335+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:09.580+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:34415
+2024-01-09T05:48:09.580+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:48:10.336+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:11.337+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:12.339+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:13.340+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:14.341+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:15.343+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:16.345+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:17.346+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:18.347+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:19.348+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:20.349+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:21.351+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:22.352+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:23.353+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:24.354+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:25.355+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:26.356+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:27.357+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:28.359+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:29.361+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:30.362+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:31.363+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:32.364+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:33.365+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:34.367+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:35.368+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:36.369+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:37.370+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:38.371+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:39.372+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:40.372+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:41.373+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:42.374+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:43.375+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:44.377+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:45.378+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:46.379+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:47.380+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:48.381+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:49.382+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:50.384+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:51.385+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:52.386+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:53.387+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:54.388+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:55.389+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:56.390+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:57.392+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:58.393+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:48:59.393+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:00.394+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:01.395+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:02.396+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:03.398+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:04.399+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:05.400+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:06.402+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:07.403+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:08.404+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:09.405+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:10.407+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:11.408+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:12.409+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:13.411+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:14.412+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:15.413+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:16.413+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:17.415+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:18.416+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:19.416+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:20.417+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:21.419+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:22.420+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:23.421+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:24.423+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:25.423+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:26.424+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:27.426+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:28.427+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:29.428+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:30.428+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:31.429+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:32.430+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:33.431+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:34.433+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:35.433+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:36.434+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:37.436+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:38.437+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:39.438+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:40.439+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:41.440+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:42.441+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:43.441+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:44.443+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:45.444+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:46.445+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:47.447+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:48.448+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:49.449+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:50.450+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:51.451+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:52.452+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:53.454+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:54.454+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:55.455+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:56.456+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:57.457+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:58.458+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:49:59.459+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:00.460+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:01.462+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:02.463+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:03.036+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:50:03.037+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:50:05.596+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T05:50:05.596+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T05:50:05.597+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:45326
+2024-01-09T05:50:05.597+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:06.599+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:07.600+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:08.019+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:50:08.601+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:09.602+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:09.615+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T05:50:10.604+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:11.605+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:12.446+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:36054
+2024-01-09T05:50:12.446+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T05:50:12.606+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:13.608+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:14.610+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:14.621+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:37683
+2024-01-09T05:50:14.621+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T05:50:15.612+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:16.614+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:17.614+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:18.615+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:19.617+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:20.619+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:21.620+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:22.621+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:23.623+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:24.624+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:25.625+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:26.626+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:27.627+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:28.628+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:29.629+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:30.631+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:31.632+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:32.632+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:33.633+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:34.634+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:35.635+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:36.637+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:37.638+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:38.639+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:39.641+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:40.642+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:41.644+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:42.645+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:43.646+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:44.647+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:45.648+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:46.649+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:47.650+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:48.651+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:49.653+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:50.654+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:51.656+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:52.658+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:53.659+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:54.659+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:55.661+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:56.662+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:57.663+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:58.664+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:50:59.665+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:00.667+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:01.668+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:02.669+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:03.671+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:04.673+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:05.673+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:06.674+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:07.675+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:08.676+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:09.678+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:10.679+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:11.681+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:12.683+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:13.684+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:14.686+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:15.688+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:16.689+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:17.689+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:18.691+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:19.692+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:20.694+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:21.694+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:22.695+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:23.697+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:24.698+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:25.698+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:26.699+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:27.699+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:28.700+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:29.701+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:30.703+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:31.704+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:32.704+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:33.705+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:34.706+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:35.707+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:36.709+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:37.710+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:38.711+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:39.712+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:40.713+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:41.714+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:42.715+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:43.716+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:44.716+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:45.717+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:46.718+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:47.719+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:48.720+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:49.721+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:50.721+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:51.723+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:52.724+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:53.725+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:54.727+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:55.729+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:56.730+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:57.731+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:58.733+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:51:59.735+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:00.736+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:01.737+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:02.737+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:03.739+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:04.740+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:05.741+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:06.741+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:07.742+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:08.743+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:09.744+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:10.745+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:11.747+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:12.748+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:13.749+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:14.750+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:15.751+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:16.752+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:17.753+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:18.754+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:19.756+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:20.756+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:21.757+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:22.759+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:23.759+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:24.761+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:25.761+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:26.762+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:27.764+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:28.765+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:29.766+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:30.768+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:31.769+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:32.770+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:33.772+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:34.773+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:35.774+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:36.775+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:37.777+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:38.777+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:39.778+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:40.779+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T05:52:40.949+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T05:52:40.949+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T05:52:42.717+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T05:52:43.905+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T14:47:30.259+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T14:47:30.259+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T14:47:30.260+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:33018
+2024-01-09T14:47:30.260+0800	[34mINFO[0m	natholepunch/server.go:151	luigipizzolito fetched list of clients.
+2024-01-09T14:47:31.159+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T14:47:31.160+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T14:52:29.737+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T14:52:29.737+0800	[34mINFO[0m	natholepunch/client.go:51	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T14:52:29.737+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:54687
+2024-01-09T14:52:29.737+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:30.738+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:31.739+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:32.740+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:33.741+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:34.742+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:35.743+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:36.744+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:37.745+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:38.746+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:39.748+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:40.748+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:41.749+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:42.751+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:43.752+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:44.753+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:45.755+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:46.755+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:47.756+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:48.757+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:49.758+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:50.760+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:51.761+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:52.763+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:53.764+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:54.765+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:55.765+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:56.766+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:57.767+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:58.769+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:52:59.770+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:00.771+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:01.771+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:02.772+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:03.772+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:04.773+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:05.775+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:06.776+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:07.777+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:08.778+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:09.779+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:10.780+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:11.781+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:12.782+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:13.783+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:14.784+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:15.785+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:16.786+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:17.787+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:18.788+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:19.789+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:20.790+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:21.790+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:22.791+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:23.792+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:24.793+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:25.793+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:26.794+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:27.794+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:28.795+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:29.797+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:30.797+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:31.799+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:32.800+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:33.801+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:34.801+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:35.802+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:36.802+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:37.803+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:38.804+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:39.805+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:40.806+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:41.807+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:42.808+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:43.809+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:44.810+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:53:45.811+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:54:04.910+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T14:58:44.445+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:00:48.216+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:02:40.986+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:02:40.986+0800	[34mINFO[0m	natholepunch/client.go:53	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T15:02:40.987+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:41.988+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:42.989+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:43.989+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:44.990+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:45.773+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:36376
+2024-01-09T15:02:45.773+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:02:45.991+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:46.852+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:60240
+2024-01-09T15:02:46.852+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:02:46.993+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:47.995+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:48.995+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:49.996+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:50.997+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:51.999+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:53.000+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:54.001+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:55.003+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:56.004+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:57.005+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:58.006+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:02:59.008+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:00.008+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:01.010+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:02.011+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:03.013+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:04.014+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:05.016+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:06.017+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:07.018+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:08.019+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:09.020+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:10.021+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:11.022+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:12.023+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:13.024+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:14.025+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:15.026+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:16.027+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:17.028+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:18.029+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:19.030+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:20.031+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:21.032+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:22.034+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:23.035+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:24.036+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:25.037+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:26.037+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:27.039+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:28.041+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:29.042+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:30.042+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:31.043+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:32.044+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:33.046+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:34.046+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:35.048+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:36.049+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:37.050+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:38.050+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:39.051+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:40.052+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:41.054+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:42.055+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:43.056+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:44.057+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:45.058+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:46.059+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:47.060+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:48.061+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:49.062+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:50.064+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:51.065+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:52.066+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:53.067+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:54.067+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:55.068+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:56.069+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:57.070+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:58.071+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:03:59.072+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:00.074+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:01.076+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:02.078+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:03.079+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:04.080+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:05.081+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:06.082+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:07.084+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:08.085+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:09.086+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:10.088+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:11.088+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:12.089+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:13.090+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:14.092+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:15.094+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:16.095+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:17.096+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:18.097+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:19.098+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:20.100+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:21.101+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:22.103+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:23.105+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:24.105+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:25.106+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:26.107+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:27.108+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:28.110+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:29.110+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:30.111+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:31.112+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:32.113+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:33.114+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:34.115+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:35.116+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:36.117+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:37.119+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:38.121+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:39.122+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:40.123+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:41.125+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:42.126+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:43.127+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:44.128+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:45.130+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:46.132+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:47.133+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:48.134+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:49.135+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:50.137+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:51.138+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:52.139+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:53.140+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:54.141+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:55.142+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:56.143+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:57.144+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:58.145+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:04:59.147+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:00.148+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:01.149+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:02.150+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:03.152+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:03.773+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T15:05:03.774+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T15:05:21.069+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:05:21.070+0800	[34mINFO[0m	natholepunch/client.go:53	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T15:05:21.070+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:32966
+2024-01-09T15:05:21.070+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:22.073+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:23.005+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:05:23.074+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:23.659+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:33685
+2024-01-09T15:05:23.659+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:05:24.075+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:24.786+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:05:25.077+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:25.460+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:42752
+2024-01-09T15:05:25.460+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:05:26.078+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:27.080+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:28.081+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:29.082+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:30.083+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:31.084+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:31.733+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:05:32.085+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:32.610+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:05:33.086+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:05:33.989+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T15:05:33.990+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T15:05:34.810+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T15:05:37.377+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:05:37.377+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T15:05:37.377+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T15:07:32.055+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:44963
+2024-01-09T15:07:32.055+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:07:32.902+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:47694
+2024-01-09T15:07:32.903+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:07:41.110+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:08:43.019+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:10:05.752+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:11:36.473+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:11:37.243+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:56866
+2024-01-09T15:11:37.244+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:11:37.855+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:11:38.496+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:44764
+2024-01-09T15:11:38.496+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:11:41.127+0800	[34mINFO[0m	natholepunch/client.go:53	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T15:11:41.128+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:39921
+2024-01-09T15:11:41.128+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:11:44.933+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:11:48.227+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:13:33.882+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T15:13:35.155+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:13:35.155+0800	[34mINFO[0m	natholepunch/server.go:57	Info Exchange Server mode
+2024-01-09T15:13:35.155+0800	[34mINFO[0m	natholepunch/server.go:74	Running server at udp://0.0.0.0:10001
+2024-01-09T15:13:37.216+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:13:37.888+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:58919
+2024-01-09T15:13:37.888+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:13:38.724+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:13:39.328+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:57795
+2024-01-09T15:13:39.328+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:13:46.287+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:60615
+2024-01-09T15:13:46.287+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:11.359+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:17:11.359+0800	[34mINFO[0m	natholepunch/client.go:53	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T15:17:11.360+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:12.362+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:13.081+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:17:13.362+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:13.764+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:33065
+2024-01-09T15:17:13.765+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:17:14.363+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:15.364+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:15.537+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:17:16.313+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:33802
+2024-01-09T15:17:16.313+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:17:16.366+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:17.368+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:18.369+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:19.370+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:20.371+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:20.537+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:17:21.371+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:22.373+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:17:22.889+0800	[33mWARN[0m	HolePunch-UDPTunnel/main.go:49	Tearing down application!
+2024-01-09T15:17:22.889+0800	[34mINFO[0m	natholepunch/server.go:107	Luigi disconnected.
+2024-01-09T15:20:28.391+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:39353
+2024-01-09T15:20:28.391+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:20:28.886+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:20:29.821+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:38244
+2024-01-09T15:20:29.822+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:20:30.684+0800	[34mINFO[0m	HolePunch-UDPTunnel/main.go:69	Hole Punch UDP Tunnel V1.0
+2024-01-09T15:20:30.685+0800	[34mINFO[0m	natholepunch/client.go:53	Hole-Punch & UDP Tunnel Client mode
+2024-01-09T15:20:30.686+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Luigi@127.0.0.1:45479
+2024-01-09T15:20:30.686+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:20:32.824+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:20:35.826+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:20:38.828+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:20:40.400+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:50454
+2024-01-09T15:20:40.401+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:21:09.506+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:21:10.198+0800	[34mINFO[0m	natholepunch/server.go:116	New client: Celine@127.0.0.1:37691
+2024-01-09T15:21:10.198+0800	[34mINFO[0m	natholepunch/server.go:163	Celine is waiting for luigipizzolito
+2024-01-09T15:21:11.058+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.
+2024-01-09T15:21:12.004+0800	[34mINFO[0m	natholepunch/server.go:116	New client: luigipizzolito@127.0.0.1:54645
+2024-01-09T15:21:12.004+0800	[34mINFO[0m	natholepunch/server.go:221	Punched NAT hole: luigipizzolito -> Celine
+2024-01-09T15:21:14.251+0800	[34mINFO[0m	natholepunch/server.go:151	Luigi fetched list of clients.
+2024-01-09T15:21:18.999+0800	[34mINFO[0m	natholepunch/server.go:107	Celine disconnected.
+2024-01-09T15:21:19.535+0800	[34mINFO[0m	natholepunch/server.go:107	luigipizzolito disconnected.

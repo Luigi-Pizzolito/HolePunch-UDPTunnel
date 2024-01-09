@@ -1,10 +1,10 @@
 package natholepunch
 
 import (
-	// "encoding/json"
+	"encoding/json"
 	"time"
 	"net"
-	// "fmt"
+	"fmt"
 
 	"go.uber.org/zap"
 )
@@ -42,7 +42,9 @@ func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, l
 		serverPort:		serverPort,
 		localID:		localID,
 		RemoteID:		remoteID,
+
 		l:				l,
+		ClientList: 	make(map[string]ClientData),
 	}
 }
 
@@ -51,7 +53,13 @@ func (c *HPClient) Run() error {
 	c.l.Info("Hole-Punch & UDP Tunnel Client mode")
 
 	// Sync online clients list from server
-	// go getClientList
+	go func(){
+		for {
+			c.getClientList()
+			fmt.Println(c.ClientList)
+			time.Sleep(1*time.Second)
+		}
+	}()
 
 	// 
 
@@ -63,6 +71,7 @@ func (c *HPClient) Run() error {
 // Teardown client class
 func StopHPClient(l *zap.Logger, serverIP, serverPort, localID string) {
 	// Stop UDP Tunnel
+	// todo:
 
 	// Send disconnect packet to server
 	//todo: add error handling print msgs here
@@ -71,30 +80,66 @@ func StopHPClient(l *zap.Logger, serverIP, serverPort, localID string) {
 		l.Warn("Error resolving server address:"+err.Error())
 		return
 	}
-
 	conn, err := net.DialUDP("udp", nil, serverAddr)
 	if err != nil {
 		l.Warn("Error connecting to server:"+err.Error())
 		return
 	}
 	defer conn.Close()
-
 	request := `{"local_id":"`+localID+`","remote_id":"\u0000"}`	// disconnect request
 	requestJSON := []byte(request)
-
-	// _, err = conn.WriteToUDP(requestJSON, serverAddr)
 	_, err = conn.Write(requestJSON)
 	if err != nil {
 		l.Warn("Error disconnect request:"+err.Error())
 		return
 	}
 }
-/*
+
 // Get other clients listing
-func (c *HPClient) getClientList() map[string]ClientData {
+func (c *HPClient) getClientList() error {
+	//todo: check if this is okat reusing the server UDP conn or not?
+	
+	serverAddr, err := net.ResolveUDPAddr("udp", c.serverAddr+":"+c.serverPort)
+	if err != nil {
+		c.l.Warn("Error resolving server address:"+err.Error())
+		return err
+	}
+	conn, err := net.DialUDP("udp", nil, serverAddr)
+	if err != nil {
+		c.l.Warn("Error connecting to server:"+err.Error())
+		return err
+	}
+	defer conn.Close()
+	request := `{"local_id":"`+c.localID+`","remote_id":""}`	// client listing request
+	requestJSON := []byte(request)
+	_, err = conn.Write(requestJSON)
+	if err != nil {
+		c.l.Warn("Error disconnect request:"+err.Error())
+		return err
+	}
+	buffer := make([]byte, 1024)
+	n, _, err := conn.ReadFromUDP(buffer)
+	if err != nil {
+		c.l.Warn("Error receiving data:"+err.Error())
+		return err
+	}
 
+	out := make(map[string]ClientData)
+	err = json.Unmarshal(buffer[:n], &out)
+	if err != nil {
+		c.l.Warn("Error parsing data:"+err.Error())
+		return err
+	}
+
+	// c.ClientList = make(map[string]ClientData, len(out))
+	// for k, v := range out {
+	// 	c.ClientList[k] = v
+	// }
+	c.ClientList = out;
+	// fmt.Println(c.ClientList)
+	return nil
 }
-
+/*
 // Contact info exchange server, perform hole punch and test connection with ping
 func (c *HPClient) punchNping() {
 

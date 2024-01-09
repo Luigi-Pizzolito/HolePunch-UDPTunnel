@@ -89,6 +89,7 @@ func main() {
 
 		// Holepunch + UDP Tunnel client mode
 		c := punch.NewHPClient(l, timeout, infoAddr, serverPort, localID, remoteID)
+		t.ConnectClientList(c.ClientList)
 		go func(){
 			if err := c.Run(); err != nil {
 				l.Fatal(err.Error())

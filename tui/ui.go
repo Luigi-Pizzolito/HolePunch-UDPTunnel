@@ -53,8 +53,20 @@ func Start(serverMode bool) *TUI {
 	ch := make(chan string, 100);
 	// Setup connection log channel
 	cch := make(chan string, 20);
+	// Setup client lists
+	serverMap := make(map[string]punch.ClientData)
+	clientMap := make(map[string]punch.ClientData)
 
-	return &TUI{L: nil, app: app, logC: ch, ConnLogC: cch, Logfile: log, serverMode: serverMode}
+	return &TUI{
+		L: 				nil,
+		app: 			app,
+		logC: 			ch,
+		ConnLogC: 		cch,
+		Logfile: 		log,
+		serverMode: 	serverMode,
+		HPServerConnectClientMap:		serverMap,
+		HPClientConnectClientMap:		clientMap,
+	}
 }
 
 func (t *TUI) Build() {
@@ -223,7 +235,7 @@ func (t *TUI) ConnectClientList(m map[string]punch.ClientData) {
 	if t.serverMode {
 		t.HPServerConnectClientMap = m;
 	} else {
-		t.HPServerConnectClientMap = m;
+		t.HPClientConnectClientMap = m;
 	}
 }
 
@@ -277,6 +289,7 @@ func (t *TUI) refreshSharedUIData() {
 		} else {
 			// get currently selected client info from HPClient
 			// todo: populate actual data from HPClient
+			fmt.Println(t.HPClientConnectClientMap)
 			selectedC := t.HPClientConnectClientMap[selectedCname];
 			fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
 			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
