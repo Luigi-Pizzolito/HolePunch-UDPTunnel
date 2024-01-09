@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"time"
 	"net"
-	"fmt"
 
 	"go.uber.org/zap"
 )
@@ -56,7 +55,7 @@ func (c *HPClient) Run() error {
 	go func(){
 		for {
 			c.getClientList()
-			fmt.Println(c.ClientList)
+			// fmt.Println(c.ClientList)
 			time.Sleep(1*time.Second)
 		}
 	}()

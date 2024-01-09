@@ -78,7 +78,7 @@ func main() {
 		// Info Exchange Server mode
 		// Start server
 		s := punch.NewHPServer(l, t.ConnLogC)
-		t.ConnectClientList(s.ClientList)
+		t.ConnectClientList(&s.ClientList)
 		go func(){
 			if err := s.Serve(serverPort); err != nil {
 				l.Fatal(err.Error())
@@ -89,7 +89,7 @@ func main() {
 
 		// Holepunch + UDP Tunnel client mode
 		c := punch.NewHPClient(l, timeout, infoAddr, serverPort, localID, remoteID)
-		t.ConnectClientList(c.ClientList)
+		t.ConnectClientList(&c.ClientList)
 		go func(){
 			if err := c.Run(); err != nil {
 				l.Fatal(err.Error())

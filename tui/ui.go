@@ -22,8 +22,9 @@ type TUI struct {
 	logC chan string		// channel for redirecting main app log
 	ConnLogC chan string	// channel for redirecting connection history log
 
-	HPServerConnectClientMap map[string]punch.ClientData 	// connection to HPServer's client list
-	HPClientConnectClientMap map[string]punch.ClientData	// connection to HPClient's client list
+	// HPServerConnectClientMap *map[string]punch.ClientData 	// connection to HPServer's client list
+	// HPClientConnectClientMap *map[string]punch.ClientData	// connection to HPClient's client list
+	HPClientMap *map[string]punch.ClientData
 	numClients int
 	
 	//todo: bind udptunnel tunnel info
@@ -54,8 +55,8 @@ func Start(serverMode bool) *TUI {
 	// Setup connection log channel
 	cch := make(chan string, 20);
 	// Setup client lists
-	serverMap := make(map[string]punch.ClientData)
-	clientMap := make(map[string]punch.ClientData)
+	// serverMap := make(map[string]punch.ClientData)
+	// clientMap := make(map[string]punch.ClientData)
 
 	return &TUI{
 		L: 				nil,
@@ -64,8 +65,8 @@ func Start(serverMode bool) *TUI {
 		ConnLogC: 		cch,
 		Logfile: 		log,
 		serverMode: 	serverMode,
-		HPServerConnectClientMap:		serverMap,
-		HPClientConnectClientMap:		clientMap,
+		// HPServerConnectClientMap:		serverMap,
+		// HPClientConnectClientMap:		clientMap,
 	}
 }
 
@@ -134,14 +135,7 @@ func (t *TUI) setupSharedUI(flex *tview.Flex) {
 
 func (t *TUI) setupClientUI(flex *tview.Flex) {
 	// -- Client List
-	t.clientList = tview.NewList().
-		// ShowSecondaryText(false).
-		AddItem("Jesus", "Tunnel Inactive", '1', nil).
-		AddItem("Luigi", "[blue]10.0.0.3", '2', nil).
-		AddItem("Celine", "Tunnel Inactive", '3', nil).
-		AddItem("Lori", "[blue]10.0.0.2", '4', func() {
-			t.L.Info("Lori Clicked")
-		})
+	t.clientList = tview.NewList()
 	t.clientList.SetBorder(true).SetTitle(" Clients Online ")
 	t.clientList.SetBackgroundColor(0)
 	// add to flex
@@ -231,14 +225,19 @@ func (t *TUI) setupServerUI(flex *tview.Flex) {
 	t.app.SetFocus(t.clientList)
 }
 
-func (t *TUI) ConnectClientList(m map[string]punch.ClientData) {
-	if t.serverMode {
-		t.HPServerConnectClientMap = m;
-	} else {
-		t.HPClientConnectClientMap = m;
-	}
+// Client list linking functions
+func (t *TUI) ConnectClientList(m *map[string]punch.ClientData) {
+	t.HPClientMap = m;
 }
 
+func (t *TUI) getClientList() map[string]punch.ClientData {
+	if t.HPClientMap == nil {
+		return make(map[string]punch.ClientData)
+	}
+	return *t.HPClientMap
+}
+
+// TUI data refresh function
 func (t *TUI) refreshUIData() {
 	// -- Logs
 	// copy t.logs recieved in log channel to UI text box
@@ -279,18 +278,16 @@ func (t *TUI) refreshSharedUIData() {
 		// get currently selected client
 		selectedCindex := t.clientList.GetCurrentItem();
 		selectedCname, _ := t.clientList.GetItemText(selectedCindex);
+		// get currently selected client info from HPServer/HPClient
+		selectedC := t.getClientList()[selectedCname];
 		// populate Client Info TextView
 		if t.serverMode {
-			// get currently selected client info from HPServer
-			selectedC := t.HPServerConnectClientMap[selectedCname];
 			// update client info
 			fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
 			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
 		} else {
 			// get currently selected client info from HPClient
 			// todo: populate actual data from HPClient
-			fmt.Println(t.HPClientConnectClientMap)
-			selectedC := t.HPClientConnectClientMap[selectedCname];
 			fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
 			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
 			fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
@@ -308,14 +305,13 @@ func (t *TUI) refreshServerUIData() {
 	// Refresh data in HPServer mode UI elements
 	// -- Clients Queue
 	// get number of clients to determine if update is needed
-	if t.numClients != len(t.HPServerConnectClientMap) {
+	if t.numClients != len(t.getClientList()) {
 		// update last number of clients to detect change next time
-		t.numClients = len(t.HPServerConnectClientMap)
-
+		t.numClients = len(t.getClientList())
 		// clear Clients Queue
 		t.clientList.Clear()
 		// populate Clients Queue
-		sortedClients := sortClientsFromMap(t.HPServerConnectClientMap)
+		sortedClients := sortClientsFromMap(t.getClientList())
 		for i, client := range sortedClients {
 			var status string
 			if client.RemoteID == "" {
@@ -329,7 +325,33 @@ func (t *TUI) refreshServerUIData() {
 }
 
 func (t *TUI) refreshClientUIData() {
-
+	// Refresh data in HPClient mode UI elements
+	// -- Client List
+	// get number of clients to determine if update is needed
+	if t.numClients != len(t.getClientList()) {
+		// update last number of clients to detect change next time
+		t.numClients = len(t.getClientList())
+		// clear Clients Queue
+		t.clientList.Clear()
+		// populate Clients Queue
+		sortedClients := sortClientsFromMap(t.getClientList())
+		for i, client := range sortedClients {
+			var status string
+			//todo: Check tunnel status also
+			if client.RemoteID == "" {
+				status = "Idle"
+			} else {
+				status = "[blue]Waiting for "+client.RemoteID+"[-]"
+			}
+			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
+		}
+	}
+	// AddItem("Jesus", "Tunnel Inactive", '1', nil).
+	// 	AddItem("Luigi", "[blue]10.0.0.3", '2', nil).
+	// 	AddItem("Celine", "Tunnel Inactive", '3', nil).
+	// 	AddItem("Lori", "[blue]10.0.0.2", '4', func() {
+	// 		t.L.Info("Lori Clicked")
+	// 	})
 }
 
 func (t *TUI) RunApp() {
