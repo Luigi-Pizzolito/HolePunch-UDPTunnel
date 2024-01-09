@@ -213,6 +213,9 @@ func (c *HPClient) updateServerRemoteID() error {
 
 // Contact info exchange server, perform hole punch and test connection with ping
 func (c *HPClient) InitiatePunch(client string) {
+
+	*c.ClientUIStage2 = true
+
 	c.l.Info("Request for hole punch to "+client)
 
 	// set our clients remoteID
@@ -232,9 +235,9 @@ func (c *HPClient) InitiatePunch(client string) {
 			c.l.Error(err.Error())
 			return
 		}
-		c.l.Info("Hole punch to "+client+" succeded")
+		c.l.Info("Hole punching to "+client)
 
-		//todo: listen for other client's ping here and reply to it
+		
 
 		// return to idle
 		// c.RemoteID = "";	//update local
@@ -271,7 +274,7 @@ func (c *HPClient) InitiatePunch(client string) {
 				c.l.Error(err.Error())
 				return
 			}
-			c.l.Info("Hole punch to "+client+" succeded")
+			c.l.Info("Hole punching to "+client)
 
 
 		}(c)
@@ -312,7 +315,7 @@ func (c *HPClient) pingNpunch() error {
 	// go c.echo()
 	go func() {
 
-		*c.ClientUIStage2 = true
+		
 
 		time.Sleep(time.Second*1)	// time for other client to check server data
 
@@ -431,14 +434,15 @@ func (c *HPClient) echo() {
 
 	var time1, time2 time.Time
 	buf := make([]byte, 1024)
+	pingCount := 0
 	for {
 		// send echo to a remote client
-		<-time.After(time.Second * 2)
-		if _, err := c.Conn.WriteToUDP([]byte(fmt.Sprintf("echo from %v", c.RemoteID)), r); err != nil {
+		<-time.After(time.Second * 1)
+		if _, err := c.Conn.WriteToUDP([]byte(fmt.Sprintf("ping from %v", c.RemoteID)), r); err != nil {
 			c.l.Error(err.Error())
 		} else {
 			time1 = time.Now()
-			c.l.Info(fmt.Sprintf("echo sent to %v at %v\n", c.RemoteID, c.R.RemoteIP))
+			c.l.Info(fmt.Sprintf("Ping sent to %v@%v:%v", c.RemoteID, c.R.RemoteIP, c.R.RemotePort))
 		}
 
 		// read from connection until timeout
@@ -458,9 +462,17 @@ func (c *HPClient) echo() {
 			continue
 		}
 		time2 = time.Now()
-		c.l.Info(fmt.Sprintf("received %v\n", string(buf[:n])))
-		c.l.Info(fmt.Sprintf("Ping: %s\n", time2.Sub(time1)))
-		// return
+		c.l.Info(fmt.Sprintf("received %v", string(buf[:n])))
+		c.l.Info(fmt.Sprintf("Ping: %s", time2.Sub(time1)))
+
+		pingCount++
+		
+		if pingCount == 5 {
+			c.l.Info("Completed 5 pings")
+			c.l.Info("Ready to open tunnel")
+			//!added: here the hole punch worked and we have already sent a bidirectional ping
+			return
+		}
 	}
 }
 
@@ -532,6 +544,7 @@ func (c *HPClient) REconnect() (*net.UDPAddr, error) {
 		remoteUDP, err := net.ResolveUDPAddr("udp", c.R.RemoteIP+":"+c.R.RemotePort)
 		// fmt.Printf("Got P2P IP from exchange server: %v:%v\n", c.R.RemoteIP, c.R.RemotePort)
 		
+		c.l.Info("Got hole-punch addr from exchange server: "+c.RemoteID+"@"+c.R.RemoteIP+":"+c.R.RemotePort)
 		//! added: remove self from server after succesful reconnection
 		c.removeFromServer()
 		//! added: update ip and ports for TUI
