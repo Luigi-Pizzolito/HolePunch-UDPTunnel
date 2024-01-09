@@ -389,10 +389,10 @@ func (t *TUI) refreshClientUIData() {
 
 // initiate client connection from HPClient
 func (t *TUI) requestClientConnect(client string) {
-	t.L.Info("Requesting connection to "+client)
+	// t.L.Info("Requesting connection to "+client)
 	
 	//todo: call HPServer punchNping(client) here
-	t.HPClient.PunchNping(client)
+	t.HPClient.InitiatePunch(client)
 
 }
 

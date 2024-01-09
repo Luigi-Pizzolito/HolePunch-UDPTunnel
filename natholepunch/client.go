@@ -144,7 +144,7 @@ func (c *HPClient) getClientList() error {
 // Client punching functions to start the connection
 
 // Contact info exchange server, perform hole punch and test connection with ping
-func (c *HPClient) PunchNping(client string) {
+func (c *HPClient) InitiatePunch(client string) {
 	c.l.Info("Request for hole punch to "+client)
 
 	// set our clients remoteID
@@ -154,22 +154,32 @@ func (c *HPClient) PunchNping(client string) {
 	if clientData.RemoteID == c.localID {
 		c.l.Info("Remote client also wants to connect")
 		c.l.Info("Initiating hole punch to "+client)
+		c.pingNpunch()
 	} else {
-		c.l.Info("Remote client does not want to connect") 
+		c.l.Warn("Remote client does not want to connect") 
+		if clientData.RemoteID == "" {
+			c.l.Info("Remote client is Idle")
+		} else {
+			c.l.Info("Remote client is waiting for "+clientData.RemoteID)
+		}
 		c.l.Info("Please ask remote client to connect to you too")
+		return
 	}
+}
+
+func (c *HPClient) pingNpunch() {
 
 }
 
-// // createP2PConnection sends local and remote ID to the server and waits for the response
-// func (c *HPClient) createP2PConnection() {
+// createP2PConnection sends local and remote ID to the server and waits for the response
+func (c *HPClient) createP2PConnection() {
 
-// }
+}
 
-// // REconnect allows to manually send reconnect signal, returns new remote addr and port
-// func (c *HPClient) REconnect() (*net.UDPAddr, error) {
+// REconnect allows to manually send reconnect signal, returns new remote addr and port
+func (c *HPClient) REconnect() (*net.UDPAddr, error) {
 
-// }
+}
 
 
 
