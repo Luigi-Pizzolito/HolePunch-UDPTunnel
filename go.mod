@@ -11,6 +11,7 @@ replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel => ./tunnel
 require (
 	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch v0.0.0-00010101000000-000000000000
 	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui v0.0.0-00010101000000-000000000000
+	go.uber.org/zap v1.26.0
 )
 
 require (
@@ -21,7 +22,6 @@ require (
 	github.com/rivo/tview v0.0.0-20240101144852-b3bd1aa5e9f2 // indirect
 	github.com/rivo/uniseg v0.4.3 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
-	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/term v0.9.0 // indirect
 	golang.org/x/text v0.12.0 // indirect

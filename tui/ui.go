@@ -237,6 +237,9 @@ func (t *TUI) getClientList() map[string]punch.ClientData {
 	return *t.HPClientMap
 }
 
+//todo: Tunnel Manager linking functions
+
+
 // TUI data refresh function
 func (t *TUI) refreshUIData() {
 	// -- Logs

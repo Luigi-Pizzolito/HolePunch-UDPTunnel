@@ -55,12 +55,12 @@ func (c *HPClient) Run() error {
 	go func(){
 		for {
 			c.getClientList()
-			// fmt.Println(c.ClientList)
+			//? maybe need to add a channel here to pause this when creating tunnel
 			time.Sleep(1*time.Second)
 		}
 	}()
 
-	// 
+	//todo: accept commands here from TUI using a command channel
 
 
 
@@ -135,9 +135,11 @@ func (c *HPClient) getClientList() error {
 	// 	c.ClientList[k] = v
 	// }
 	c.ClientList = out;
-	// fmt.Println(c.ClientList)
 	return nil
 }
+
+
+// Client punching functions to start the connection
 /*
 // Contact info exchange server, perform hole punch and test connection with ping
 func (c *HPClient) punchNping() {
