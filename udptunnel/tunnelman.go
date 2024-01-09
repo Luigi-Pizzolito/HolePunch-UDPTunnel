@@ -1,6 +1,13 @@
 package udptunnel
 
 import (
+	"sort"
+	"strings"
+    "syscall"
+    "golang.org/x/term"
+	"io/ioutil"
+	"os"
+	"path/filepath"
 	"go.uber.org/zap"
 )
 
@@ -39,8 +46,95 @@ func (m* TunnelManager) AddClient(Client, TunnelAddr string, TunnelPorts []int, 
 }
 
 // Commands
-func (m* TunnelManager) OpenTunnel(Client string) {
+func (m* TunnelManager) OpenTunnel(Self, Client string) {
 	// create tunnel to Client
+	// determine role
+	role := m.determineRole(Self, Client)
+	if role {
+		m.l.Info("Determined to be tunnel server")
+	} else {
+		m.l.Info("Determined to be tunnel client")
+	}
+	// get sudo password
+	m.l.Warn("Elevating priviledges to open tunnel")
+	passwd, err := m.getPasswd()
+	if err != nil {
+		m.l.Fatal("Failed to get sudo passwd")
+		return
+	}
+	m.l.Warn(passwd)
+	// write udptunnel config file
+	var config string
+	filename := "udptunnel_config.json"
+	if role {
+		// Server config
+		config = `
+			{
+				"TunnelAddress": "10.0.0.1",
+				"NetworkAddress": ":`+m.TunClients[Client].EndPPort+`",
+				"AllowedPorts": [22],
+			}`
+	} else {
+		// Client config
+		config = `
+			{
+				"TunnelAddress": "10.0.0.2",
+				"NetworkAddress": "`+m.TunClients[Client].EndPIP+`:`+m.TunClients[Client].EndPPort+`",
+				"AllowedPorts": [22],
+			}`
+	}
+	err = m.writeStringToFile(filename, config)
+	if err != nil {
+		m.l.Fatal("Error writing to udptunnel config:"+err.Error())
+		return
+	}
+	m.l.Info("Wrote configuration file for UDP tunnel")
+
+}
+
+func (m* TunnelManager) determineRole(Self, Client string) bool {
+	strSlice := []string{Self, Client}
+	// Sort the slice of strings alphabetically
+	sort.Strings(strSlice)
+	// First string is the server
+	if strSlice[0] == Self {
+		// I am server
+		return true
+	} else {
+		// I am client
+		return false
+	}
+}
+
+func (m* TunnelManager) getPasswd() (string, error) {
+    // fmt.Print("Enter Password: ")
+	m.l.Warn("Enter Sudo Password: ")
+    bytePassword, err := term.ReadPassword(int(syscall.Stdin))
+    if err != nil {
+        return "", err
+    }
+    password := string(bytePassword)
+    return strings.TrimSpace(password), nil
+}
+
+func (m* TunnelManager) writeStringToFile(filename, content string) error {
+	// Write the content to the file
+	exePath, err := os.Executable()
+	if err != nil {
+		return err
+	}
+
+	// Get the directory of the executable
+	exeDir := filepath.Dir(exePath)
+
+	// Construct the file path relative to the executable directory
+	filePath := filepath.Join(exeDir, filename)
+
+	err = ioutil.WriteFile(filePath, []byte(content), 0644)
+	if err != nil {
+		return err
+	}
+	return nil
 }
 
 func (m* TunnelManager) CloseTunnel(Client string) {

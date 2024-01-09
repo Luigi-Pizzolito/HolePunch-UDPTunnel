@@ -53,7 +53,7 @@ type TUI struct {
 
 func Start(serverMode bool) *TUI {
 	// Setup TUI
-	app := tview.NewApplication().EnableMouse(true);
+	app := tview.NewApplication()//.EnableMouse(true);
 
 	// Setup log file
 	log := "./log/log.log"
@@ -318,9 +318,11 @@ func (t *TUI) refreshSharedUIData() {
 				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
 				fmt.Fprintf(t.clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
 				fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
-				fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
 			} else {
 				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Inactive[-][\"\"]\n")
+			}
+			if tunClient.Ping != "" {
+				fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]"+tunClient.Ping+"[-][\"\"]\n")
 			}
 
 			fmt.Fprintf(t.clientInfo, " [red]%#v[-]\n", tunClient)

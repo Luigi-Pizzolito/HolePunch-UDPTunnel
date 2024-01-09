@@ -474,6 +474,9 @@ func (c *HPClient) echo() {
 			//!added: here the hole punch worked and we have already sent a bidirectional ping
 			c.l.Info("Completed 5 pings")
 			c.l.Info("Ready to open tunnel")
+			// close socket
+			c.Conn.Close()
+			// start tunnel
 			c.requestOpenTunnel(fmt.Sprintf("%s", time2.Sub(time1)))
 			return
 		}
@@ -491,6 +494,7 @@ func (c *HPClient) requestOpenTunnel(ping string) {
 		EndPPort:		c.R.RemotePort,
 		EndPAPorts:		make([]int,0),				//todo
 	}
+	c.TunnelMan.OpenTunnel(c.localID, c.RemoteID)
 }
 
 // createP2PConnection sends local and remote ID to the server and waits for the response
