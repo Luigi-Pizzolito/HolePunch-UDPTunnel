@@ -6,11 +6,12 @@ replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch => ./nathole
 
 replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui => ./tui
 
-replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel => ./tunnel
+replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel => ./udptunnel
 
 require (
 	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch v0.0.0-00010101000000-000000000000
 	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui v0.0.0-00010101000000-000000000000
+	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel v0.0.0-00010101000000-000000000000
 	go.uber.org/zap v1.26.0
 )
 

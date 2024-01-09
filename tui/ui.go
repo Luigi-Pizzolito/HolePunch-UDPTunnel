@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"sort"
 
-	"github.com/gdamore/tcell/v2"
+	// "github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 	"go.uber.org/zap"
 )
@@ -25,8 +25,9 @@ type TUI struct {
 
 	HPClientMap *map[string]punch.ClientData	// connection to HPServer/HPclient's client list
 	// changeClientMap map[string]punch.ClientData
-	numClients int
+	// numClients int
 	UIupdate bool
+	ClientUIStage2 bool
 
 	// bind HPClient
 	HPClient *punch.HPClient
@@ -35,6 +36,7 @@ type TUI struct {
 	TunnelMan *tunnel.TunnelManager
 
 	app *tview.Application	// application reference
+	flex *tview.Flex
 	// application elements reference
 	// -- shared
 	logs *tview.TextView
@@ -42,7 +44,7 @@ type TUI struct {
 	clientList *tview.List
 	selectedClient string
 	// -- client only
-	activeTunnels *tview.TreeView
+	// activeTunnels *tview.TreeView
 	// -- server only
 	ConnLogs *tview.TextView
 
@@ -74,6 +76,7 @@ func Start(serverMode bool) *TUI {
 		// HPClientConnectClientMap:		clientMap,
 		// changeClientMap:change,
 		UIupdate:		false,
+		ClientUIStage2: false,
 	}
 }
 
@@ -83,20 +86,20 @@ func (t *TUI) Build() {
 
 	// Setup UI Flexbox layout
 	// Populate UI elements in Flex
-	flex := tview.NewFlex()
-	t.app.SetRoot(flex, true).SetFocus(flex)
+	t.flex = tview.NewFlex()
+	t.app.SetRoot(t.flex, true).SetFocus(t.flex)
 
 	// Setup UI elements
 	if t.serverMode {
 		// Holepunch server UI
-		t.setupServerUI(flex)
+		t.setupServerUI(t.flex)
 	} else {
 		// Holepunch client UI + UDP Tunnel UI
-		t.setupClientUI(flex)
+		t.setupClientUI(t.flex)
 	}
 
 	// Automatically refresh UI element data using goroutine
-	t.numClients = 0
+	// t.numClients = 0
 	go t.refreshUIData()
 	
 }
@@ -152,35 +155,35 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 	t.setupSharedUI(flex)
 
 	// -- Network Interfaces
-	root := tview.NewTreeNode("Network Interfaces").
-					SetSelectable(false)
-	t.activeTunnels = tview.NewTreeView().
-							SetRoot(root).
-							SetCurrentNode(nil)
-	t.activeTunnels.SetBorder(true).SetTitle(" Active Tunnels ")
-	t.activeTunnels.SetBackgroundColor(0)
-	//----
-	node := tview.NewTreeNode("tun0").
-				// SetReference(filepath.Join(path, file.Name())).
-				SetColor(tcell.ColorPurple).
-				SetSelectable(false)
-	root.AddChild(node)
-	nnode := tview.NewTreeNode("[blue]10.0.0.1[-] (Jesus)").
-				// SetReference(filepath.Join(path, file.Name())).
-				SetSelectable(false)
-	node.AddChild(nnode)
-	//----
-	node2 := tview.NewTreeNode("tun1").
-				// SetReference(filepath.Join(path, file.Name())).
-				SetColor(tcell.ColorPurple).
-				SetSelectable(false)
-	root.AddChild(node2)
-	nnode2 := tview.NewTreeNode("[blue]10.0.0.2[-] (Lori)").
-				// SetReference(filepath.Join(path, file.Name())).
-				SetSelectable(false)
-	node2.AddChild(nnode2)
-	// add to flex 
-	flex.AddItem(t.activeTunnels, 0, 2, false)
+	// root := tview.NewTreeNode("Network Interfaces").
+	// 				SetSelectable(false)
+	// t.activeTunnels = tview.NewTreeView().
+	// 						SetRoot(root).
+	// 						SetCurrentNode(nil)
+	// t.activeTunnels.SetBorder(true).SetTitle(" Active Tunnels ")
+	// t.activeTunnels.SetBackgroundColor(0)
+	// //----
+	// node := tview.NewTreeNode("tun0").
+	// 			// SetReference(filepath.Join(path, file.Name())).
+	// 			SetColor(tcell.ColorPurple).
+	// 			SetSelectable(false)
+	// root.AddChild(node)
+	// nnode := tview.NewTreeNode("[blue]10.0.0.1[-] (Jesus)").
+	// 			// SetReference(filepath.Join(path, file.Name())).
+	// 			SetSelectable(false)
+	// node.AddChild(nnode)
+	// //----
+	// node2 := tview.NewTreeNode("tun1").
+	// 			// SetReference(filepath.Join(path, file.Name())).
+	// 			SetColor(tcell.ColorPurple).
+	// 			SetSelectable(false)
+	// root.AddChild(node2)
+	// nnode2 := tview.NewTreeNode("[blue]10.0.0.2[-] (Lori)").
+	// 			// SetReference(filepath.Join(path, file.Name())).
+	// 			SetSelectable(false)
+	// node2.AddChild(nnode2)
+	// // add to flex 
+	// flex.AddItem(t.activeTunnels, 0, 2, false)
 
 	// set app focus
 	t.app.SetFocus(t.clientList)
@@ -310,7 +313,6 @@ func (t *TUI) refreshSharedUIData() {
 			
 			// todo: populate actual data from TunnelManager
 			tunClient := t.TunnelMan.TunClients[selectedCname]
-			fmt.Fprintf(t.clientInfo, " [red]%#v[-]\n", tunClient)
 
 			if tunClient.TunnelOn {
 				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
@@ -321,6 +323,7 @@ func (t *TUI) refreshSharedUIData() {
 				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Inactive[-][\"\"]\n")
 			}
 
+			fmt.Fprintf(t.clientInfo, " [red]%#v[-]\n", tunClient)
 			
 		}
 	} else {
@@ -417,6 +420,18 @@ func (t *TUI) refreshClientUIData() {
 	// 	AddItem("Lori", "[blue]10.0.0.2", '4', func() {
 	// 		t.L.Info("Lori Clicked")
 	// 	})
+
+	if t.ClientUIStage2 {
+		t.ClientUIStage2 = false
+
+		t.flex.RemoveItem(t.clientList)
+
+	}
+
+
+	// -- Tunnel Info
+	//todo:
+
 }
 
 // initiate client connection from HPClient

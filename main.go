@@ -90,7 +90,7 @@ func main() {
 
 		// Holepunch + UDP Tunnel client mode
 		m := tunnel.NewTunnelManager(l)
-		c := punch.NewHPClient(l, timeout, infoAddr, serverPort, localID, remoteID, &t.UIupdate) //? add &m input here
+		c := punch.NewHPClient(l, timeout, infoAddr, serverPort, localID, remoteID, &t.UIupdate, &t.ClientUIStage2) //? add &m input here
 		t.ConnectClientList(&c.ClientList)
 		t.ConnectHPClient(c)
 		t.ConnectTunMan(m)

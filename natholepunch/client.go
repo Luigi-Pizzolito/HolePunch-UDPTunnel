@@ -39,6 +39,7 @@ type HPClient struct {
 	ClientList		map[string]ClientData
 	// UI update hook
 	UIupdate		*bool
+	ClientUIStage2	*bool
 	UIupdateCListB	[]byte
 	//todo: Tunnel info & udptunnel command channel
 	//TunnelInfo		map...
@@ -48,7 +49,7 @@ type HPClient struct {
 }
 
 // Initialises a pointer to a new HPClient struct
-func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, localID, remoteID string, UIupdate *bool/*, bind UI tunnel listing here later*/) *HPClient {
+func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, localID, remoteID string, UIupdate, ClientUIStage2 *bool,/*, bind UI tunnel listing here later*/) *HPClient {
 	return &HPClient{
 		connectStatus:	make(chan error),
 		stopChan:		make(chan struct{}),
@@ -61,6 +62,7 @@ func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, l
 		l:				l,
 		ClientList: 	make(map[string]ClientData),
 		UIupdate:		UIupdate,
+		ClientUIStage2: ClientUIStage2,
 		UIupdateCListB: make([]byte, 1024),
 		pauseClientFetch: false,
 	}
@@ -310,6 +312,7 @@ func (c *HPClient) pingNpunch() error {
 	// go c.echo()
 	go func() {
 
+		*c.ClientUIStage2 = true
 
 		time.Sleep(time.Second*1)	// time for other client to check server data
 
@@ -317,6 +320,8 @@ func (c *HPClient) pingNpunch() error {
 		c.removeFromServer()
 
 		time.Sleep(2*time.Second)	// time for other client to remove itself from server
+
+		
 
 		// start original punch n' echo code
 		// runCommand(c.l, "./natholepunch/udp-nat-hole-punch-exe", "-l", c.localID, "-r", c.RemoteID)
