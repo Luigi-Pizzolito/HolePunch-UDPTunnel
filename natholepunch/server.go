@@ -18,14 +18,18 @@ type HPServer struct {
 	// Client list
 	sync.RWMutex
 	ClientList map[string]ClientData
+
+	// UI update hook
+	UIupdate *bool
+
 	// Logger
 	l *zap.Logger
 	ConnLogC chan string
 }
 
 // Initialises a pointer to a new HPServer struct
-func NewHPServer(l *zap.Logger, ConnLogC chan string) *HPServer {
-	return &HPServer{ClientList: make(map[string]ClientData), l: l, ConnLogC: ConnLogC}
+func NewHPServer(l *zap.Logger, ConnLogC chan string, UIupdate *bool) *HPServer {
+	return &HPServer{ClientList: make(map[string]ClientData), l: l, ConnLogC: ConnLogC, UIupdate: UIupdate}
 }
 
 //-------- Server Functions --------
@@ -106,21 +110,28 @@ func (s *HPServer) Serve(serverPort string) error {
 				s.deleteClient(incomingRequest.LocalID)
 				s.l.Info(incomingRequest.LocalID+" disconnected.")
 
+				*s.UIupdate = true; // update UI
+
 				return
 			} else {
 				// Other kind of request: Idle listing or Hole-Punch request
 
 				// Add client to clients queue
 				// check if client is not already in queue first
+				s.RLock()
 				if _, ok := s.ClientList[incomingRequest.LocalID]; !ok {
 					s.l.Info("New client: "+incomingRequest.LocalID+"@"+newClientIP+":"+newClientPort)
+					*s.UIupdate = true; // update UI
 				}
+				s.RUnlock()
+
 				s.addClient(ClientData{
 					RemoteID:  incomingRequest.RemoteID,
 					LocalID:   incomingRequest.LocalID,
 					LocalIP:   newClientIP,
 					LocalPort: newClientPort,
 				})
+				
 
 				// Check if client wants server client list or requests a hole-punch
 				if incomingRequest.RemoteID == "" {
@@ -128,10 +139,12 @@ func (s *HPServer) Serve(serverPort string) error {
 
 					// Build response to client JSON
 					// create copy of client list and remove requester LocalID, can't connect to yourself!
+					s.RLock()
 					clientList := make(map[string]ClientData, len(s.ClientList))
 					for k, v := range s.ClientList {
 						clientList[k] = v
 					}
+					s.RUnlock()
 					delete(clientList, incomingRequest.LocalID)
 
 					// Convert to JSON
@@ -148,7 +161,7 @@ func (s *HPServer) Serve(serverPort string) error {
 						return
 					}
 
-					s.l.Info(incomingRequest.LocalID+" fetched list of clients.")
+					// s.l.Info(incomingRequest.LocalID+" fetched list of clients.")
 
 					return
 				} else {
@@ -160,7 +173,24 @@ func (s *HPServer) Serve(serverPort string) error {
 					//! or if the LocalID is not the requested RemoteID (remote ID also needs to accept/initiate the connection, 2way)
 					//! removed here so that any client can connect to any client in idle state
 					if err != nil || clientFromMap.RemoteID != incomingRequest.LocalID {
-						s.l.Info(incomingRequest.LocalID+" is waiting for "+incomingRequest.RemoteID)
+						// s.l.Info(incomingRequest.LocalID+" is waiting for "+incomingRequest.RemoteID)
+						// update waiting status
+						s.RLock()
+						// s.ClientList[incomingRequest.LocalID].RemoteID = incomingRequest.RemoteID;
+						// First we get a "copy" of the entry
+						if entry, ok := s.ClientList[incomingRequest.LocalID]; ok {
+							// Then we modify the copy
+							entry.RemoteID = incomingRequest.RemoteID
+							s.RUnlock()
+							s.Lock()
+							// Then we reassign map entry
+							s.ClientList[incomingRequest.LocalID] = entry
+							s.Unlock()
+						}
+
+						*s.UIupdate = true; // update UI
+						
+						
 						// exit handle function
 						return
 					}
@@ -214,11 +244,12 @@ func (s *HPServer) Serve(serverPort string) error {
 
 					// Remove the requester client from the waitlist queue
 					// s.deleteClient(clientFromMap.LocalID)
-					s.deleteClient(incomingRequest.LocalID)
+					// s.deleteClient(incomingRequest.LocalID)
+					// s.deleteClient(clientFromMap.LocalID) //! this removes the client after it has gathered the hole punch data
 
 					// Print succesfull punch request to logs
 					s.printPunch(incomingRequest.LocalID,incomingRequest.RemoteID)
-					s.l.Info("Punched NAT hole: "+incomingRequest.LocalID+" -> "+incomingRequest.RemoteID)
+					s.l.Info("Punch request: "+incomingRequest.LocalID+" -> "+incomingRequest.RemoteID)
 				
 				}
 			}

@@ -24,7 +24,9 @@ type TUI struct {
 	ConnLogC chan string	// channel for redirecting connection history log
 
 	HPClientMap *map[string]punch.ClientData	// connection to HPServer/HPclient's client list
+	// changeClientMap map[string]punch.ClientData
 	numClients int
+	UIupdate bool
 
 	// bind HPClient
 	HPClient *punch.HPClient
@@ -58,7 +60,7 @@ func Start(serverMode bool) *TUI {
 	// Setup connection log channel
 	cch := make(chan string, 20);
 	// Setup client lists
-	// serverMap := make(map[string]punch.ClientData)
+	// change := make(map[string]punch.ClientData)
 	// clientMap := make(map[string]punch.ClientData)
 
 	return &TUI{
@@ -70,6 +72,8 @@ func Start(serverMode bool) *TUI {
 		serverMode: 	serverMode,
 		// HPServerConnectClientMap:		serverMap,
 		// HPClientConnectClientMap:		clientMap,
+		// changeClientMap:change,
+		UIupdate:		false,
 	}
 }
 
@@ -325,13 +329,35 @@ func (t *TUI) refreshSharedUIData() {
 	}
 }
 
+// func (t *TUI) isClientListChanged() bool {
+// 	original := t.getClientList()
+// 	copied := t.changeClientMap
+
+// 	if len(original) != len(copied) {
+// 		return true
+// 	}
+
+// 	for key := range original {
+// 		if original[key] != copied[key] {
+// 			return true
+// 		}
+// 	}
+// 	return false
+// }
+
 func (t *TUI) refreshServerUIData() {
 	// Refresh data in HPServer mode UI elements
 	// -- Clients Queue
 	// get number of clients to determine if update is needed
-	if t.numClients != len(t.getClientList()) {
-		// update last number of clients to detect change next time
-		t.numClients = len(t.getClientList())
+	// mapChanged := t.isClientListChanged()
+
+	// t.L.Info(fmt.Sprintf("%#v", t.getClientList()))
+
+	if /*t.numClients != len(t.getClientList())  ||*/ t.UIupdate {
+		// t.L.Info("Clientmap changed: "+strconv.FormatBool(mapChanged))
+		// update last number of clients or client map to detect change next time
+		// t.changeClientMap = t.getClientList()
+		// t.numClients = len(t.getClientList())
 		// clear Clients Queue
 		t.clientList.Clear()
 		// populate Clients Queue
@@ -345,6 +371,9 @@ func (t *TUI) refreshServerUIData() {
 			}
 			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
 		}
+		t.UIupdate = false
+		// t.L.Warn("UI UPDATED!")
+		// time.Sleep(time.Second)
 	}
 }
 
@@ -352,9 +381,9 @@ func (t *TUI) refreshClientUIData() {
 	// Refresh data in HPClient mode UI elements
 	// -- Client List
 	// get number of clients to determine if update is needed
-	if t.numClients != len(t.getClientList()) {
+	if /*t.numClients != len(t.getClientList())*/ t.UIupdate {
 		// update last number of clients to detect change next time
-		t.numClients = len(t.getClientList())
+		// t.numClients = len(t.getClientList())
 		// clear Clients Queue
 		t.clientList.Clear()
 		// populate Clients Queue
@@ -378,6 +407,9 @@ func (t *TUI) refreshClientUIData() {
 				t.requestClientConnect(clientID)
 			}) //todo: add function here onclicked to start/stop connections
 		}
+
+		t.UIupdate = false
+		// t.L.Warn("UI UPDATED!")
 	}
 	// AddItem("Jesus", "Tunnel Inactive", '1', nil).
 	// 	AddItem("Luigi", "[blue]10.0.0.3", '2', nil).

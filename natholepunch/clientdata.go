@@ -18,16 +18,9 @@ type ClientData struct {
 	LocalIP   string `json:"local_addr"`
 	LocalPort string `json:"local_port"`
 	LocalID   string `json:"local_ID"`
-	//todo: add fields for HPCLient
+	// // todo: add fields for HPCLient
 
-	Ping	  string //`json:"ping"`
+	// Ping	  string //`json:"ping"
 }
-
-//todo: tunnel info struct
-// type TunnelInfo struct {
-// 	Interface	string
-// 	ClientID	string
-// 	ClientLIP	string
-// }
 
 //! add auth struct here to allow incoming connections?
