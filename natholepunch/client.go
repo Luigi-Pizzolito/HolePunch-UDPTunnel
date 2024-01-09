@@ -9,7 +9,7 @@ import (
 	"bytes"
 	// "strconv"
 
-	// tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
 
 	"go.uber.org/zap"
 
@@ -42,6 +42,7 @@ type HPClient struct {
 	ClientUIStage2	*bool
 	UIupdateCListB	[]byte
 	//todo: Tunnel info & udptunnel command channel
+	TunnelMan			*tunnel.TunnelManager
 	//TunnelInfo		map...
 	//TunnelControl		chan ?
 	// Logger
@@ -49,7 +50,7 @@ type HPClient struct {
 }
 
 // Initialises a pointer to a new HPClient struct
-func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, localID, remoteID string, UIupdate, ClientUIStage2 *bool,/*, bind UI tunnel listing here later*/) *HPClient {
+func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, localID, remoteID string, UIupdate, ClientUIStage2 *bool, TunnelMan *tunnel.TunnelManager) *HPClient {
 	return &HPClient{
 		connectStatus:	make(chan error),
 		stopChan:		make(chan struct{}),
@@ -65,6 +66,8 @@ func NewHPClient(l *zap.Logger, timeout time.Duration, serverAddr, serverPort, l
 		ClientUIStage2: ClientUIStage2,
 		UIupdateCListB: make([]byte, 1024),
 		pauseClientFetch: false,
+
+		TunnelMan:			TunnelMan,
 	}
 }
 
@@ -468,11 +471,25 @@ func (c *HPClient) echo() {
 		pingCount++
 		
 		if pingCount == 5 {
+			//!added: here the hole punch worked and we have already sent a bidirectional ping
 			c.l.Info("Completed 5 pings")
 			c.l.Info("Ready to open tunnel")
-			//!added: here the hole punch worked and we have already sent a bidirectional ping
+			c.requestOpenTunnel(fmt.Sprintf("%s", time2.Sub(time1)))
 			return
 		}
+	}
+}
+
+func (c *HPClient) requestOpenTunnel(ping string) {
+	c.TunnelMan.TunClients[c.RemoteID] = tunnel.ClientTunnelData{
+		TunnelOn:		false,
+		TunnelAddr:		"<ip_here>",	//todo
+		TunnelPorts:	make([]int,0),				//todo
+		Ping:			ping,
+		// for udp tunnel
+		EndPIP:			c.R.RemoteIP,
+		EndPPort:		c.R.RemotePort,
+		EndPAPorts:		make([]int,0),				//todo
 	}
 }
 
