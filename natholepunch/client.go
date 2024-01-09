@@ -5,6 +5,8 @@ import (
 	"time"
 	"net"
 
+	// tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
+
 	"go.uber.org/zap"
 )
 
@@ -100,12 +102,12 @@ func (c *HPClient) getClientList() error {
 	
 	serverAddr, err := net.ResolveUDPAddr("udp", c.serverAddr+":"+c.serverPort)
 	if err != nil {
-		c.l.Warn("Error resolving server address:"+err.Error())
+		c.l.Warn("Client List: Error resolving server address:"+err.Error())
 		return err
 	}
 	conn, err := net.DialUDP("udp", nil, serverAddr)
 	if err != nil {
-		c.l.Warn("Error connecting to server:"+err.Error())
+		c.l.Warn("Client List: Error connecting to server:"+err.Error())
 		return err
 	}
 	defer conn.Close()
@@ -113,20 +115,20 @@ func (c *HPClient) getClientList() error {
 	requestJSON := []byte(request)
 	_, err = conn.Write(requestJSON)
 	if err != nil {
-		c.l.Warn("Error disconnect request:"+err.Error())
+		c.l.Warn("Client List: Error disconnect request:"+err.Error())
 		return err
 	}
 	buffer := make([]byte, 1024)
 	n, _, err := conn.ReadFromUDP(buffer)
 	if err != nil {
-		c.l.Warn("Error receiving data:"+err.Error())
+		c.l.Warn("Client List: Error receiving data:"+err.Error())
 		return err
 	}
 
 	out := make(map[string]ClientData)
 	err = json.Unmarshal(buffer[:n], &out)
 	if err != nil {
-		c.l.Warn("Error parsing data:"+err.Error())
+		c.l.Warn("Client List: Error parsing data:"+err.Error())
 		return err
 	}
 
@@ -140,22 +142,35 @@ func (c *HPClient) getClientList() error {
 
 
 // Client punching functions to start the connection
-/*
+
 // Contact info exchange server, perform hole punch and test connection with ping
-func (c *HPClient) punchNping() {
+func (c *HPClient) PunchNping(client string) {
+	c.l.Info("Request for hole punch to "+client)
+
+	// set our clients remoteID
+	c.RemoteID = client;
+	// check if we are ready to hole punch (other client also wants)
+	clientData := c.ClientList[client];
+	if clientData.RemoteID == c.localID {
+		c.l.Info("Remote client also wants to connect")
+		c.l.Info("Initiating hole punch to "+client)
+	} else {
+		c.l.Info("Remote client does not want to connect") 
+		c.l.Info("Please ask remote client to connect to you too")
+	}
 
 }
 
-// createP2PConnection sends local and remote ID to the server and waits for the response
-func (c *Client) createP2PConnection() {
+// // createP2PConnection sends local and remote ID to the server and waits for the response
+// func (c *HPClient) createP2PConnection() {
 
-}
+// }
 
-// REconnect allows to manually send reconnect signal, returns new remote addr and port
-func (c *Client) REconnect() (*net.UDPAddr, error) {
+// // REconnect allows to manually send reconnect signal, returns new remote addr and port
+// func (c *HPClient) REconnect() (*net.UDPAddr, error) {
 
-}
-*/
+// }
+
 
 
 //! both clients need to request connection for hole punch to work?? check in network test

@@ -22,7 +22,7 @@ func NewTunnelManager(l *zap.Logger) *TunnelManager {
 
 // Main logic
 func (m* TunnelManager) Run() error {
-
+	return nil
 }
 
 // Allow client info to be populated by HPClient

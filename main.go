@@ -8,6 +8,7 @@ import (
 	"os/user"
 
 	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
 	tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
 )
 
@@ -88,10 +89,11 @@ func main() {
 	} else {
 
 		// Holepunch + UDP Tunnel client mode
-		//? m := udptunnel.NewTunnelManager(l)
+		m := tunnel.NewTunnelManager(l)
 		c := punch.NewHPClient(l, timeout, infoAddr, serverPort, localID, remoteID) //? add &m input here
 		t.ConnectClientList(&c.ClientList)
-		//? add t.ConnectTunMan(&m) here
+		t.ConnectHPClient(c)
+		t.ConnectTunMan(m)
 		//? add t.Run() here
 		go func(){
 			if err := c.Run(); err != nil {

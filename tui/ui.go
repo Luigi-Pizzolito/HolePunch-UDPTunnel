@@ -7,6 +7,7 @@ import (
 	"time"
 
 	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
 	"strconv"
 	"sort"
 
@@ -22,12 +23,14 @@ type TUI struct {
 	logC chan string		// channel for redirecting main app log
 	ConnLogC chan string	// channel for redirecting connection history log
 
-	// HPServerConnectClientMap *map[string]punch.ClientData 	// connection to HPServer's client list
-	// HPClientConnectClientMap *map[string]punch.ClientData	// connection to HPClient's client list
-	HPClientMap *map[string]punch.ClientData
+	HPClientMap *map[string]punch.ClientData	// connection to HPServer/HPclient's client list
 	numClients int
+
+	// bind HPClient
+	HPClient *punch.HPClient
 	
 	//todo: bind udptunnel tunnel info
+	TunnelMan *tunnel.TunnelManager
 
 	app *tview.Application	// application reference
 	// application elements reference
@@ -237,7 +240,15 @@ func (t *TUI) getClientList() map[string]punch.ClientData {
 	return *t.HPClientMap
 }
 
+// HPClient linking functions
+func (t *TUI) ConnectHPClient(c *punch.HPClient) {
+	t.HPClient = c;
+}
+
 //todo: Tunnel Manager linking functions
+func (t *TUI) ConnectTunMan(m *tunnel.TunnelManager) {
+	t.TunnelMan = m;
+}
 
 
 // TUI data refresh function
@@ -290,13 +301,23 @@ func (t *TUI) refreshSharedUIData() {
 			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
 		} else {
 			// get currently selected client info from HPClient
-			// todo: populate actual data from HPClient
 			fmt.Fprintf(t.clientInfo, " [\"name\"]Name: [green]%s[-][\"\"]\n", selectedC.LocalID)
 			fmt.Fprintf(t.clientInfo, " [\"rAdr\"]Remote Address: [blue]udp://%s:%s[-][\"\"]\n", selectedC.LocalIP, selectedC.LocalPort)
-			fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
-			fmt.Fprintf(t.clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
-			fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
-			fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
+			
+			// todo: populate actual data from TunnelManager
+			tunClient := t.TunnelMan.TunClients[selectedCname]
+			fmt.Fprintf(t.clientInfo, " [red]%#v[-]\n", tunClient)
+
+			if tunClient.TunnelOn {
+				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Active[-][\"\"]\n")
+				fmt.Fprintf(t.clientInfo, " [\"lAdr\"]Local Address: [blue]10.0.0.1[-][\"\"]\n")
+				fmt.Fprintf(t.clientInfo, " [\"rPrt\"]Alowed Ports: [blue]22, 80, 443[-][\"\"]\n")
+				fmt.Fprintf(t.clientInfo, " [\"rPng\"]Ping: [blue]32.4ms[-][\"\"]\n")
+			} else {
+				fmt.Fprintf(t.clientInfo, " [\"stat\"]Status: [purple]Tunnel Inactive[-][\"\"]\n")
+			}
+
+			
 		}
 	} else {
 		// show that no clients are selected if there are no clients
@@ -340,13 +361,22 @@ func (t *TUI) refreshClientUIData() {
 		sortedClients := sortClientsFromMap(t.getClientList())
 		for i, client := range sortedClients {
 			var status string
+			clientID := client.LocalID
 			//todo: Check tunnel status also
 			if client.RemoteID == "" {
 				status = "Idle"
 			} else {
-				status = "[blue]Waiting for "+client.RemoteID+"[-]"
+				//? is this the right place to put this?
+				tunClient := t.TunnelMan.TunClients[clientID]
+				if !tunClient.TunnelOn {
+					status = "[blue]Waiting for "+client.RemoteID+"[-]"
+				} else {
+					status = "[purple]Tunnel Active[-]"
+				}
 			}
-			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
+			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], func(){
+				t.requestClientConnect(clientID)
+			}) //todo: add function here onclicked to start/stop connections
 		}
 	}
 	// AddItem("Jesus", "Tunnel Inactive", '1', nil).
@@ -357,6 +387,16 @@ func (t *TUI) refreshClientUIData() {
 	// 	})
 }
 
+// initiate client connection from HPClient
+func (t *TUI) requestClientConnect(client string) {
+	t.L.Info("Requesting connection to "+client)
+	
+	//todo: call HPServer punchNping(client) here
+	t.HPClient.PunchNping(client)
+
+}
+
+// Run TUI handler
 func (t *TUI) RunApp() {
 	if err := t.app.Run(); err != nil {
 		panic(err)
