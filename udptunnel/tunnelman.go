@@ -9,6 +9,7 @@ import (
 	"os"
 	"path/filepath"
 	"go.uber.org/zap"
+	"fmt"
 )
 
 // Define the Tunnel Manager Struct
@@ -46,7 +47,7 @@ func (m* TunnelManager) AddClient(Client, TunnelAddr string, TunnelPorts []int, 
 }
 
 // Commands
-func (m* TunnelManager) OpenTunnel(Self, Client string) {
+func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 	// create tunnel to Client
 	// determine role
 	role := m.determineRole(Self, Client)
@@ -56,6 +57,7 @@ func (m* TunnelManager) OpenTunnel(Self, Client string) {
 		m.l.Info("Determined to be tunnel client")
 	}
 	// get sudo password
+	m.stopMousePrinting()
 	m.l.Warn("Elevating priviledges to open tunnel")
 	passwd, err := m.getPasswd()
 	if err != nil {
@@ -63,6 +65,7 @@ func (m* TunnelManager) OpenTunnel(Self, Client string) {
 		return
 	}
 	m.l.Warn(passwd)
+	m.resumeMousePrinting()
 	// write udptunnel config file
 	var config string
 	filename := "udptunnel_config.json"
@@ -71,17 +74,21 @@ func (m* TunnelManager) OpenTunnel(Self, Client string) {
 		config = `
 			{
 				"TunnelAddress": "10.0.0.1",
-				"NetworkAddress": ":`+m.TunClients[Client].EndPPort+`",
+				"NetworkAddress": ":`+SelfPort+`",
 				"AllowedPorts": [22],
-			}`
+			}
+		`
+		m.l.Info("Tunnel server connected to :"+SelfPort)
 	} else {
 		// Client config
 		config = `
 			{
 				"TunnelAddress": "10.0.0.2",
 				"NetworkAddress": "`+m.TunClients[Client].EndPIP+`:`+m.TunClients[Client].EndPPort+`",
-				"AllowedPorts": [22],
-			}`
+				"AllowedPorts": [22]
+			}
+		`
+		m.l.Info("Tunnel client connected to "+m.TunClients[Client].EndPIP+`:`+m.TunClients[Client].EndPPort)
 	}
 	err = m.writeStringToFile(filename, config)
 	if err != nil {
@@ -90,6 +97,16 @@ func (m* TunnelManager) OpenTunnel(Self, Client string) {
 	}
 	m.l.Info("Wrote configuration file for UDP tunnel")
 
+	//? Next: summon tunnel UDP with sudo
+
+}
+
+func (m* TunnelManager) stopMousePrinting() {
+    fmt.Print("\x1b[?1005l")
+}
+
+func (m* TunnelManager) resumeMousePrinting() {
+    fmt.Print("\x1b[?1005h")
 }
 
 func (m* TunnelManager) determineRole(Self, Client string) bool {

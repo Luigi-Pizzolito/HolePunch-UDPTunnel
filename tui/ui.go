@@ -53,7 +53,7 @@ type TUI struct {
 
 func Start(serverMode bool) *TUI {
 	// Setup TUI
-	app := tview.NewApplication()//.EnableMouse(true);
+	app := tview.NewApplication().EnableMouse(true);
 
 	// Setup log file
 	log := "./log/log.log"

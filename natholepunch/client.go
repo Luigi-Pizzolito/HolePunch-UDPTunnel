@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"errors"
 	"bytes"
-	// "strconv"
+	"strconv"
 
 	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
 
@@ -489,12 +489,16 @@ func (c *HPClient) requestOpenTunnel(ping string) {
 		TunnelAddr:		"<ip_here>",	//todo
 		TunnelPorts:	make([]int,0),				//todo
 		Ping:			ping,
-		// for udp tunnel
-		EndPIP:			c.R.RemoteIP,
+		// for udp tunnels
+		EndPIP:			c.R.RemoteIP, //todo: check why this is not being passed
 		EndPPort:		c.R.RemotePort,
 		EndPAPorts:		make([]int,0),				//todo
 	}
-	c.TunnelMan.OpenTunnel(c.localID, c.RemoteID)
+	//? use c.TunnelMan.AddClient(...) instead
+	//! no way to get our client local port here to be passed?
+	//!try
+	localAddr := c.Conn.LocalAddr().(*net.UDPAddr)
+	c.TunnelMan.OpenTunnel(c.localID, strconv.Itoa(localAddr.Port), c.RemoteID)
 }
 
 // createP2PConnection sends local and remote ID to the server and waits for the response
