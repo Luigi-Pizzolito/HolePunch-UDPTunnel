@@ -12,7 +12,7 @@ import (
 	tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
 )
 
-const version = "1.0"
+const version = "0.2"
 
 var (
 	// Server mode switch

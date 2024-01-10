@@ -1,6 +1,0 @@
-
-			{
-				"TunnelAddress": "10.0.0.1",
-				"NetworkAddress": ":45120",
-				"AllowedPorts": [22],
-			}
