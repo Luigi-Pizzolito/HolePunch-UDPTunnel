@@ -7,7 +7,7 @@ import (
 	"time"
 
 	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
-	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tunnelman"
 	"strconv"
 	"sort"
 
@@ -56,7 +56,7 @@ func Start(serverMode bool) *TUI {
 	app := tview.NewApplication().EnableMouse(true);
 
 	// Setup log file
-	log := "./log/log.log"
+	log := "./log.log"
 	// Setup log channel
 	ch := make(chan string, 100);
 	// Setup connection log channel

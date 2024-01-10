@@ -8,7 +8,7 @@ import (
 	"os/user"
 
 	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
-	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/udptunnel"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tunnelman"
 	tui "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui"
 )
 
