@@ -10,11 +10,16 @@ import (
 	"time"
 )
 
+// Setup a new logger
 func (t *TUI) setupLogger() *zap.Logger {
 	zapEncoder := zap.NewDevelopmentEncoderConfig()
+	// Define colorful logger output
 	zapEncoder.EncodeLevel = zapcore.CapitalColorLevelEncoder
+	// Define a log file to also write the logs too
 	logFile, _ := os.OpenFile(t.Logfile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	// Define a string writer to redirect log output to StringWriter, which will copy it to logC channel which the TUI consumes to show log in text area
 	uiLogWriter := StringWriter{ch: t.logC};
+	// Add both file output and TUI output to logger's writers
 	syncer := zap.CombineWriteSyncers(logFile, zapcore.AddSync(uiLogWriter)/*apcore.AddSync(colorable.NewColorableStdout())*/)
 	l := zap.New(zapcore.NewCore(
     	zapcore.NewConsoleEncoder(zapEncoder),
@@ -37,7 +42,7 @@ func (sw StringWriter) Write(p []byte) (n int, err error) {
 	return len(p), nil
 }
 
-// log format simplifier for UI log
+// log format simplifier for UI log, file recieves full log format
 func simplifyLogFormat(input string) (string, error) {
 	// Split the input string by tab ("\t") to separate its components
 	parts := strings.Split(input, "\t")

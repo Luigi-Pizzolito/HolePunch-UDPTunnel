@@ -3,7 +3,7 @@ package natholepunch
 // ConnectRequest decribes message from client to server, contents requested and local clients ID
 type ConnectRequest struct {
 	LocalID  string `json:"local_id"`
-	RemoteID string `json:"remote_id"`		// fif empty, flag to whether client is idle and wants online client listing from server		
+	RemoteID string `json:"remote_id"`		// if empty, flag to whether client is idle and wants online client listing from server'; if null byte, it is a server disconnect request
 }
 
 // ConnectResponse decribes message from server to client, contents requested client address
@@ -18,9 +18,4 @@ type ClientData struct {
 	LocalIP   string `json:"local_addr"`
 	LocalPort string `json:"local_port"`
 	LocalID   string `json:"local_ID"`
-	// // todo: add fields for HPCLient
-
-	// Ping	  string //`json:"ping"
 }
-
-//! add auth struct here to allow incoming connections?

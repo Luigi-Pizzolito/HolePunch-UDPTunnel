@@ -11,9 +11,12 @@ import (
 	"go.uber.org/zap"
 )
 
+// Embed UDPTunnel executable inside of our HolePunch-UDPTunnel executable
+
 //go:embed udptunnel
 var embeddedExecutable embed.FS
 
+// Execute embedded executable with sudo privillidges
 func executeEmbeddedBinaryAsSudo(l *zap.Logger, embedded embed.FS, binaryPath, configFile, password string, args ...string) {
 	// Extraction of embedded binary and execution logic
 	tmpBinary, err := ioutil.TempFile("", "embedded-executable-*")

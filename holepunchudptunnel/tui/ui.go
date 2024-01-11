@@ -3,7 +3,6 @@ package tui
 import (
 	"fmt"
 	"io"
-	// "os"
 	"time"
 
 	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/natholepunch"
@@ -11,7 +10,6 @@ import (
 	"strconv"
 	"sort"
 
-	// "github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
 	"go.uber.org/zap"
 )
@@ -24,8 +22,6 @@ type TUI struct {
 	ConnLogC chan string	// channel for redirecting connection history log
 
 	HPClientMap *map[string]punch.ClientData	// connection to HPServer/HPclient's client list
-	// changeClientMap map[string]punch.ClientData
-	// numClients int
 	UIupdate bool
 	ClientUIStage2 bool
 
@@ -43,8 +39,6 @@ type TUI struct {
 	clientInfo *tview.TextView
 	clientList *tview.List
 	selectedClient string
-	// -- client only
-	// activeTunnels *tview.TreeView
 	// -- server only
 	ConnLogs *tview.TextView
 
@@ -61,9 +55,6 @@ func Start(serverMode bool) *TUI {
 	ch := make(chan string, 100);
 	// Setup connection log channel
 	cch := make(chan string, 20);
-	// Setup client lists
-	// change := make(map[string]punch.ClientData)
-	// clientMap := make(map[string]punch.ClientData)
 
 	return &TUI{
 		L: 				nil,
@@ -72,9 +63,6 @@ func Start(serverMode bool) *TUI {
 		ConnLogC: 		cch,
 		Logfile: 		log,
 		serverMode: 	serverMode,
-		// HPServerConnectClientMap:		serverMap,
-		// HPClientConnectClientMap:		clientMap,
-		// changeClientMap:change,
 		UIupdate:		false,
 		ClientUIStage2: false,
 	}
@@ -99,7 +87,6 @@ func (t *TUI) Build() {
 	}
 
 	// Automatically refresh UI element data using goroutine
-	// t.numClients = 0
 	go t.refreshUIData()
 	
 }
@@ -153,37 +140,6 @@ func (t *TUI) setupClientUI(flex *tview.Flex) {
 
 	// -- Shared UI elements (Client Info & Logs)
 	t.setupSharedUI(flex)
-
-	// -- Network Interfaces
-	// root := tview.NewTreeNode("Network Interfaces").
-	// 				SetSelectable(false)
-	// t.activeTunnels = tview.NewTreeView().
-	// 						SetRoot(root).
-	// 						SetCurrentNode(nil)
-	// t.activeTunnels.SetBorder(true).SetTitle(" Active Tunnels ")
-	// t.activeTunnels.SetBackgroundColor(0)
-	// //----
-	// node := tview.NewTreeNode("tun0").
-	// 			// SetReference(filepath.Join(path, file.Name())).
-	// 			SetColor(tcell.ColorPurple).
-	// 			SetSelectable(false)
-	// root.AddChild(node)
-	// nnode := tview.NewTreeNode("[blue]10.0.0.1[-] (Jesus)").
-	// 			// SetReference(filepath.Join(path, file.Name())).
-	// 			SetSelectable(false)
-	// node.AddChild(nnode)
-	// //----
-	// node2 := tview.NewTreeNode("tun1").
-	// 			// SetReference(filepath.Join(path, file.Name())).
-	// 			SetColor(tcell.ColorPurple).
-	// 			SetSelectable(false)
-	// root.AddChild(node2)
-	// nnode2 := tview.NewTreeNode("[blue]10.0.0.2[-] (Lori)").
-	// 			// SetReference(filepath.Join(path, file.Name())).
-	// 			SetSelectable(false)
-	// node2.AddChild(nnode2)
-	// // add to flex 
-	// flex.AddItem(t.activeTunnels, 0, 2, false)
 
 	// set app focus
 	t.app.SetFocus(t.clientList)
@@ -334,35 +290,13 @@ func (t *TUI) refreshSharedUIData() {
 	}
 }
 
-// func (t *TUI) isClientListChanged() bool {
-// 	original := t.getClientList()
-// 	copied := t.changeClientMap
-
-// 	if len(original) != len(copied) {
-// 		return true
-// 	}
-
-// 	for key := range original {
-// 		if original[key] != copied[key] {
-// 			return true
-// 		}
-// 	}
-// 	return false
-// }
-
+// Function to refresh the TUI data
 func (t *TUI) refreshServerUIData() {
 	// Refresh data in HPServer mode UI elements
-	// -- Clients Queue
-	// get number of clients to determine if update is needed
-	// mapChanged := t.isClientListChanged()
 
-	// t.L.Info(fmt.Sprintf("%#v", t.getClientList()))
-
-	if /*t.numClients != len(t.getClientList())  ||*/ t.UIupdate {
+	if  t.UIupdate {
 		// t.L.Info("Clientmap changed: "+strconv.FormatBool(mapChanged))
-		// update last number of clients or client map to detect change next time
-		// t.changeClientMap = t.getClientList()
-		// t.numClients = len(t.getClientList())
+
 		// clear Clients Queue
 		t.clientList.Clear()
 		// populate Clients Queue
@@ -377,18 +311,14 @@ func (t *TUI) refreshServerUIData() {
 			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], nil)
 		}
 		t.UIupdate = false
-		// t.L.Warn("UI UPDATED!")
-		// time.Sleep(time.Second)
+		// t.L.Info("UI UPDATED!")
 	}
 }
 
 func (t *TUI) refreshClientUIData() {
 	// Refresh data in HPClient mode UI elements
 	// -- Client List
-	// get number of clients to determine if update is needed
-	if /*t.numClients != len(t.getClientList())*/ t.UIupdate {
-		// update last number of clients to detect change next time
-		// t.numClients = len(t.getClientList())
+	if t.UIupdate {
 		// clear Clients Queue
 		t.clientList.Clear()
 		// populate Clients Queue
@@ -409,38 +339,28 @@ func (t *TUI) refreshClientUIData() {
 				}
 			}
 			t.clientList.AddItem(client.LocalID, status, []rune(strconv.Itoa(i+1))[0], func(){
+				// this function is called when a client is selected
 				t.requestClientConnect(clientID)
-			}) //todo: add function here onclicked to start/stop connections
+			})
 		}
 
 		t.UIupdate = false
 		// t.L.Warn("UI UPDATED!")
 	}
-	// AddItem("Jesus", "Tunnel Inactive", '1', nil).
-	// 	AddItem("Luigi", "[blue]10.0.0.3", '2', nil).
-	// 	AddItem("Celine", "Tunnel Inactive", '3', nil).
-	// 	AddItem("Lori", "[blue]10.0.0.2", '4', func() {
-	// 		t.L.Info("Lori Clicked")
-	// 	})
 
+	// check if we are in client UI stage 2, if so change the UI layout
 	if t.ClientUIStage2 {
 		t.ClientUIStage2 = false
 
 		t.flex.RemoveItem(t.clientList)
-
 	}
-
-
-	// -- Tunnel Info
-	//todo:
-
 }
 
 // initiate client connection from HPClient
 func (t *TUI) requestClientConnect(client string) {
+	// This function is called when the TUI client selects another client to connect to
+
 	// t.L.Info("Requesting connection to "+client)
-	
-	//todo: call HPServer punchNping(client) here
 	t.HPClient.InitiatePunch(client)
 
 }

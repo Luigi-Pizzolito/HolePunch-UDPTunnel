@@ -124,7 +124,7 @@ func (s *HPServer) Serve(serverPort string) error {
 					*s.UIupdate = true; // update UI
 				}
 				s.RUnlock()
-
+				// Add client to queue
 				s.addClient(ClientData{
 					RemoteID:  incomingRequest.RemoteID,
 					LocalID:   incomingRequest.LocalID,
@@ -171,7 +171,7 @@ func (s *HPServer) Serve(serverPort string) error {
 					// if requested RemoteID is not available (nil), client is in the waiting state until the requested RemoteID becomes online
 
 					//! or if the LocalID is not the requested RemoteID (remote ID also needs to accept/initiate the connection, 2way)
-					//! removed here so that any client can connect to any client in idle state
+				
 					if err != nil || clientFromMap.RemoteID != incomingRequest.LocalID {
 						// s.l.Info(incomingRequest.LocalID+" is waiting for "+incomingRequest.RemoteID)
 						// update waiting status
@@ -189,7 +189,6 @@ func (s *HPServer) Serve(serverPort string) error {
 						}
 
 						*s.UIupdate = true; // update UI
-						
 						
 						// exit handle function
 						return
@@ -240,12 +239,7 @@ func (s *HPServer) Serve(serverPort string) error {
 						return
 					}
 
-					// At this point hole-punch is completed!
-
-					// Remove the requester client from the waitlist queue
-					// s.deleteClient(clientFromMap.LocalID)
-					// s.deleteClient(incomingRequest.LocalID)
-					// s.deleteClient(clientFromMap.LocalID) //! this removes the client after it has gathered the hole punch data
+					// At this point client has recieved all the information it needs to perform hole-punch!
 
 					// Print succesfull punch request to logs
 					s.printPunch(incomingRequest.LocalID,incomingRequest.RemoteID)
@@ -259,6 +253,7 @@ func (s *HPServer) Serve(serverPort string) error {
 	return nil
 }
 
+// Print punch into connection history on the right side of the server TUI
 func (s *HPServer) printPunch(from string, to string) {
 	// Get timestampo
 	// Format the time to hh:mm:ss

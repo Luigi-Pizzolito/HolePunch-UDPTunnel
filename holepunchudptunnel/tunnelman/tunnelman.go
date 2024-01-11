@@ -114,7 +114,7 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 		forwardSignalToChild(m.l, sig)
 	}
 
-	// if tunnels are leftover due to improper teardown, remove with: sudo ip link delete tun0
+	//? if tunnels are leftover due to improper teardown, remove with: sudo ip link delete tun0
 
 }
 

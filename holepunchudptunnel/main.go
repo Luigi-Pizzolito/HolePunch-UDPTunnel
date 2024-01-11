@@ -61,13 +61,12 @@ func teardown(l *zap.Logger, serverMode bool) {
 }
 
 func main() {
-	//todo: add graceful exit
 
 	// Setup TUI
 	t := tui.Start(infoExchangeServer)
 	t.Build()
 
-	// Setup logger.
+	// Setup logger
 	l := t.L
 	fmt.Println("Hole Punch UDP Tunnel V"+version);
 	l.Info("Hole Punch UDP Tunnel V"+version);
