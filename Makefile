@@ -33,7 +33,9 @@ prepare-cn:
 	cd $(SRCDIR1) && go work use ./tui
 	cd $(SRCDIR1) && go work use ./tunnelman
 	export GOPROXY=https://goproxy.cn && export GOSUMDB=sum.golang.org && cd $(SRCDIR1) && go get
+	export GOPROXY=https://goproxy.cn && export GOSUMDB=sum.golang.org && cd $(SRCDIR1) && go mod tidy
 	export GOPROXY=https://goproxy.cn && export GOSUMDB=sum.golang.org && cd $(SRCDIR2) && go get
+	export GOPROXY=https://goproxy.cn && export GOSUMDB=sum.golang.org && cd $(SRCDIR2) && go mod tidy
 
 make-prod: GOFLAGS += -ldflags "-s -w" -trimpath
 make-prod: all
