@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"os/exec"
+	"syscall"
 	"path/filepath"
 	"go.uber.org/zap"
 )
@@ -155,4 +156,22 @@ func removeCopiedFile(l *zap.Logger, filePath string) {
 		return
 	}
 	l.Info("Copied file removed successfully.")
+}
+
+func forwardSignalToChild(l *zap.Logger, sig os.Signal) {
+	// Get PID of child executable
+	pid := os.Getpid()
+
+	// Create a process group with the same process group ID as the parent
+	err := syscall.Setpgid(pid, pid)
+	if err != nil {
+		l.Fatal("Error setting process group ID:"+err.Error())
+		return
+	}
+
+	// Forward the signal to the child process group
+	err = syscall.Kill(-pid, sig.(syscall.Signal))
+	if err != nil {
+		l.Error("Error forwarding signal to child process:"+err.Error())
+	}
 }

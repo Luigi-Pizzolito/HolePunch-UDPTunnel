@@ -4,6 +4,7 @@ import (
 	"sort"
 	"strings"
     "syscall"
+	"os/signal"
     "golang.org/x/term"
 	"io/ioutil"
 	"os"
@@ -97,10 +98,23 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 	}
 	m.l.Info("Wrote configuration file for UDP tunnel")
 
-	//? Next: summon tunnel UDP with sudo
+	// Summon tunnel UDP with sudo
 	m.l.Info("Starting Tunnel Daemon now")
-	executeEmbeddedBinaryAsSudo(m.l, embeddedExecutable, "udptunnel", "udptunnel_config.json", passwd, "udptunnel_config.json")
-	
+
+	// Create channel to recieve signals
+	signalChan := make(chan os.Signal, 1)
+	signal.Notify(signalChan, os.Interrupt, syscall.SIGTERM)
+	// Execute embedded binary with sudo in a separate goroutine
+	go executeEmbeddedBinaryAsSudo(m.l, embeddedExecutable, "udptunnel", "udptunnel_config.json", passwd, "udptunnel_config.json")
+	// Wait for signals
+	select {
+	case sig := <-signalChan:
+		m.l.Warn("Recieved signal: "+sig.String())
+		// Forward signal to child process
+		forwardSignalToChild(m.l, sig)
+	}
+
+	// if tunnels are leftover due to improper teardown, remove with: sudo ip link delete tun0
 
 }
 
