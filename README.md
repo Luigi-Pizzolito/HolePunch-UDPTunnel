@@ -147,8 +147,27 @@ Usage of bin/HolePunch-UDPTunnel:
         Specify reconnection timeout (default 2s)
 ```
 
-- After running a hole-punch server, the client info, logs and connection history can be seen:
+### Server TUI
 
+- After running a hole-punch server, the client info, logs and connection history can be seen:
+![server-idle](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/54709949-c7f1-403b-b7ed-886b43bcaf71)
+![server-connect](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/0ed5cb64-b9b8-47df-984e-f242b7aaca54)
+
+
+### Client TUI
 
 - After running a hole-punch client, the TUI can be seen:
+- Click, press enter, or press a number key to select a client to connect to.
+![client2-1-waiting](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/cda3ce19-ca8b-494b-b9f7-f698e4c0dec5)
 
+- The hole-punch operation will begin, and pings will be sent in between clients:
+![client2-2-pinging](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/18006ad6-b9ae-455a-b3f7-b1fda30eba39)
+
+- After sucessful hole-punch, `sudo` password is prompted, enter sudo password to launch the UDP tunnel:
+![client2-3-tunnel](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/53158653-da54-44e4-a848-762916df17ee)
+
+- After launching UDP tunnel, one client is assigned IP `10.0.0.1` and the other client is assigned IP `10.0.0.2`
+- You may now access the other client with any application or protocol (including TCP) directly by using their IP.
+- For example, SSHing into the other client:
+![tunnel-1-sshlogin](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/bc35a492-e984-45d3-ba2c-b86b0269bf58)
+![tunnel-2-sshfetch](https://github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/assets/27804554/175caed7-264a-40d5-a3fa-8b659d36662c)
