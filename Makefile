@@ -7,9 +7,9 @@ SRCDIR1 = ./holepunchudptunnel
 SRCDIR2 = ./udptunnel
 BINDIR = bin
 
-.PHONY: all clean make-prod
+.PHONY: all clean make-prod prepare prepare-cn
 
-all: prepare-cn UDPTunnel HolePunch-UDPTunnel
+all: clean prepare-cn UDPTunnel HolePunch-UDPTunnel
 
 UDPTunnel:
 	cd $(SRCDIR2) && $(GO) build $(GOFLAGS) -o ../$(SRCDIR1)/tunnelman .
@@ -23,7 +23,9 @@ prepare:
 	cd $(SRCDIR1) && go work use ./tui
 	cd $(SRCDIR1) && go work use ./tunnelman
 	cd $(SRCDIR1) && go get
+	cd $(SRCDIR1) && go mod tidy
 	cd $(SRCDIR2) && go get
+	cd $(SRCDIR2) && go mod tidy
 
 prepare-cn:
 	cd $(SRCDIR1) && go work use .

@@ -6,8 +6,8 @@ import (
 	// "os"
 	"time"
 
-	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch"
-	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tunnelman"
+	punch "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/natholepunch"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/tunnelman"
 	"strconv"
 	"sort"
 

@@ -2,10 +2,16 @@ module github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel
 
 go 1.21.5
 
+replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/natholepunch => ./natholepunch
+
+replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/tui => ./tui
+
+replace github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/tunnelman => ./tunnelman
+
 require (
-	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/natholepunch v0.0.0-20240110085938-32e3e1b73908
-	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tui v0.0.0-20240110085938-32e3e1b73908
-	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tunnelman v0.0.0-20240110085938-32e3e1b73908
+	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/natholepunch v0.0.0-00010101000000-000000000000
+	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/tui v0.0.0-00010101000000-000000000000
+	github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/tunnelman v0.0.0-00010101000000-000000000000
 	go.uber.org/zap v1.26.0
 )
 

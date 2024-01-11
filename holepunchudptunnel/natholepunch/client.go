@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"strconv"
 
-	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/tunnelman"
+	tunnel "github.com/Luigi-Pizzolito/HolePunch-UDPTunnel/holepunchudptunnel/tunnelman"
 
 	"go.uber.org/zap"
 
