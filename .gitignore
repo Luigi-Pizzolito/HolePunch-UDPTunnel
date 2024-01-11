@@ -23,5 +23,7 @@ go.work
 # Log files
 log.log
 
+# compile dirs & compile outputs
 bin
 bin/*
+holepunchudptunnel/tunnelman/udptunnel

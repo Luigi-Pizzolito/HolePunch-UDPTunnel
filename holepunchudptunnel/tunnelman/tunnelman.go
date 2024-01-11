@@ -64,7 +64,7 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 		m.l.Fatal("Failed to get sudo passwd")
 		return
 	}
-	m.l.Warn(passwd)
+	// m.l.Warn(passwd)
 	m.resumeMousePrinting()
 	// write udptunnel config file
 	var config string
@@ -98,6 +98,9 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 	m.l.Info("Wrote configuration file for UDP tunnel")
 
 	//? Next: summon tunnel UDP with sudo
+	m.l.Info("Starting Tunnel Daemon now")
+	executeEmbeddedBinaryAsSudo(m.l, embeddedExecutable, "udptunnel", "udptunnel_config.json", passwd, "udptunnel_config.json")
+	
 
 }
 
