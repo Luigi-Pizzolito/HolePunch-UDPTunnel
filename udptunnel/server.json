@@ -1,0 +1,5 @@
+{
+	"TunnelAddress": "10.0.0.1",
+	"NetworkAddress": ":8000",
+	"AllowedPorts": [22],
+}
