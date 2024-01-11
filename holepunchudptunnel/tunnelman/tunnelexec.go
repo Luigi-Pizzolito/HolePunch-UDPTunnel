@@ -118,9 +118,9 @@ func printOutput(l *zap.Logger, pipe io.Reader) {
 		if n > 0 {
 			l.Info(string(buf[:n]))
 		}
-		if err == io.EOF {
-			return
-		}
+		// if err == io.EOF {
+		// 	return
+		// }
 	}
 }
 

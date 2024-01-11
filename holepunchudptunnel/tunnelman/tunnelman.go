@@ -57,7 +57,7 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 		m.l.Info("Determined to be tunnel client")
 	}
 	// get sudo password //!add skip if user is already sudo
-	m.stopMousePrinting()
+	StopMousePrinting()
 	m.l.Warn("Elevating priviledges to open tunnel")
 	passwd, err := m.getPasswd()
 	if err != nil {
@@ -65,7 +65,7 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 		return
 	}
 	// m.l.Warn(passwd)
-	m.resumeMousePrinting()
+	ResumeMousePrinting()
 	// write udptunnel config file
 	var config string
 	filename := "udptunnel_config.json"
@@ -104,11 +104,11 @@ func (m* TunnelManager) OpenTunnel(Self, SelfPort, Client string) {
 
 }
 
-func (m* TunnelManager) stopMousePrinting() {
+func StopMousePrinting() {
     fmt.Print("\x1b[?1005l")
 }
 
-func (m* TunnelManager) resumeMousePrinting() {
+func ResumeMousePrinting() {
     fmt.Print("\x1b[?1005h")
 }
 

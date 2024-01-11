@@ -50,6 +50,9 @@ func teardown(l *zap.Logger, serverMode bool) {
 	l.Warn("Tearing down application!")
 	fmt.Println("Tearing down application!")
 
+	// stop terminal mouse printing
+	tunnel.StopMousePrinting()
+
 	if !serverMode {
 		// Client mode termination
 		//Send a request to server to inform client going offline
